@@ -1,0 +1,1 @@
+rootProject.name = "calypsonet-terminal-reader-java-api"
