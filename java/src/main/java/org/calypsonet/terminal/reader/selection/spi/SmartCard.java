@@ -1,5 +1,5 @@
 /* **************************************************************************************
- * Copyright (c) 2021 Calypso Networks Association https://www.calypsonet-asso.org/
+ * Copyright (c) 2021 Calypso Networks Association https://calypsonet.org/
  *
  * See the NOTICE file(s) distributed with this work for additional information
  * regarding copyright ownership.
@@ -39,8 +39,7 @@ public interface SmartCard {
    * definitions.
    *
    * <p>These data being variable from one reader to another, they are defined here in string format
-   * which can be either a hexadecimal string or any other relevant information. * @return Null if
-   * no power-on data is available.
+   * which can be either a hexadecimal string or any other relevant information.
    *
    * @return Null if no power-on data is available.
    * @since 1.0
