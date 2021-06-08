@@ -1,5 +1,5 @@
 /**
- * Components used in applications to manage card selection.
+ * Components used to manage card selection.
  *
  * @since 1.0
  */

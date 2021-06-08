@@ -12,8 +12,8 @@
 package org.calypsonet.terminal.reader.spi;
 
 /**
- * Reader observation error handler to be notified of errors that may occur during operations
- * carried out by the card monitoring process.
+ * Reader observation error handler to implement in order to be notified of errors that may occur
+ * during operations carried out by the card monitoring process.
  *
  * @since 1.0
  */

@@ -1,5 +1,5 @@
 /**
- * Components to be implemented by using applications when readers are observed.
+ * Components to be implemented by end user applications when readers are observed.
  *
  * @since 1.0
  */

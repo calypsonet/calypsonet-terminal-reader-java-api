@@ -59,10 +59,12 @@ public interface CardSelectionService {
    * Appends a card selection case to the card selection scenario.
    *
    * <p>The method returns the index giving the current position of the selection in the selection
-   * scenario (0 for the first application, 1 for the second, etc.).
+   * scenario (0 for the first application, 1 for the second, etc.). This index will be used to
+   * retrieve the corresponding result in the {@link CardSelectionResult} object.
    *
    * @param cardSelection The card selection.
    * @return A positive int.
+   * @throws IllegalArgumentException If the provided card selection is null.
    * @since 1.0
    */
   int prepareSelection(CardSelection cardSelection);
@@ -84,6 +86,7 @@ public interface CardSelectionService {
    *
    * @param reader The reader to communicate with the card.
    * @return A not null reference.
+   * @throws IllegalArgumentException If the provided reader is null.
    * @throws ReaderCommunicationException If the communication with the reader has failed.
    * @throws CardCommunicationException If communication with the card has failed or if the status
    *     word check is enabled in the card request and the card has returned an unexpected code.
@@ -101,9 +104,13 @@ public interface CardSelectionService {
    * <p>The reader's behavior at the end of the card processing is defined by the specified {@link
    * ObservableCardReader.DetectionMode}.
    *
+   * <p>The result of the scenario execution will be analyzed by {@link
+   * #parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}.
+   *
    * @param ObservableCardReader The reader with which the card communication is carried out.
    * @param detectionMode The card detection mode.
    * @param notificationMode The card notification mode.
+   * @throws IllegalArgumentException If one of the parameters is null.
    * @since 1.0
    */
   void scheduleCardSelectionScenario(
@@ -112,12 +119,12 @@ public interface CardSelectionService {
       ObservableCardReader.NotificationMode notificationMode);
 
   /**
-   * Analyzes the responses received in return of the execution of a card selection scenario and
-   * returns the {@link CardSelectionResult}.
+   * Analyzes the responses provided by a {@link org.calypsonet.terminal.reader.CardReaderEvent}
+   * following the insertion of a card and the execution of the selection scenario.
    *
    * @param scheduledCardSelectionsResponse The card selection scenario execution response.
    * @return A not null reference.
-   * @throws IllegalArgumentException If scheduledCardSelectionsResponse is null.
+   * @throws IllegalArgumentException If the provided card selection response is null.
    * @since 1.0
    */
   CardSelectionResult parseScheduledCardSelectionsResponse(

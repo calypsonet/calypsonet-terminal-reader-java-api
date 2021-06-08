@@ -24,6 +24,36 @@ import org.calypsonet.terminal.reader.selection.ScheduledCardSelectionsResponse;
 public interface CardReaderEvent {
 
   /**
+   * Gets the name of the reader that generated the event.
+   *
+   * @return A not empty string.
+   * @since 1.0
+   */
+  String getReaderName();
+
+  /**
+   * Gets the reader event type.
+   *
+   * @return A not null value.
+   * @since 1.0
+   */
+  Type getType();
+
+  /**
+   * Gets the card selection responses that may be present when the event is {@link
+   * Type#CARD_INSERTED}, always present when the event is {@link Type#CARD_MATCHED} and null in the
+   * others cases.
+   *
+   * <p>It is necessary to use the method {@link
+   * org.calypsonet.terminal.reader.selection.CardSelectionService#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}
+   * to analyze the result.
+   *
+   * @return Null if the event is not carrying a {@link ScheduledCardSelectionsResponse}.
+   * @since 1.0
+   */
+  ScheduledCardSelectionsResponse getScheduledCardSelectionsResponse();
+
+  /**
    * Possible card events.
    *
    * @since 1.0
@@ -58,30 +88,4 @@ public interface CardReaderEvent {
      */
     UNAVAILABLE
   }
-
-  /**
-   * Gets the name of the reader that generated the event.
-   *
-   * @return A not empty string.
-   * @since 1.0
-   */
-  String getReaderName();
-
-  /**
-   * Gets the reader event type.
-   *
-   * @return A not null value.
-   * @since 1.0
-   */
-  Type getType();
-
-  /**
-   * Gets the card selection responses that may be present when the event is {@link
-   * Type#CARD_INSERTED}, always present when the event is {@link Type#CARD_MATCHED} and null in the
-   * others cases.
-   *
-   * @return Null if the event is not carrying a {@link ScheduledCardSelectionsResponse}.
-   * @since 1.0
-   */
-  ScheduledCardSelectionsResponse getScheduledCardSelectionsResponse();
 }

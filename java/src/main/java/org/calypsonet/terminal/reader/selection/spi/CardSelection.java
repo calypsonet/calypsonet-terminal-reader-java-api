@@ -11,12 +11,12 @@
  ************************************************************************************** */
 package org.calypsonet.terminal.reader.selection.spi;
 
+import org.calypsonet.terminal.reader.selection.CardSelectionService;
+
 /**
- * Marker interface providing run-time type information about data defining the elements of a card
- * selection.
+ * Selection scenario implemented and provided by a card extension.
  *
- * <p>Backside of the <b>org.calypsonet.terminal.card.spi.CardSelectionSpi</b> provided by the
- * <b>Terminal Card API</b>.
+ * <p>Performed by the {@link CardSelectionService}, one or more selections could be made.
  *
  * @since 1.0
  */

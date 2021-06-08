@@ -14,7 +14,7 @@ package org.calypsonet.terminal.reader.spi;
 import org.calypsonet.terminal.reader.CardReaderEvent;
 
 /**
- * Reader observer recipient of the {@link CardReaderEvent} from a {@link
+ * Reader observer to implement in order to receive {@link CardReaderEvent} from a {@link
  * org.calypsonet.terminal.reader.ObservableCardReader}.
  *
  * @since 1.0

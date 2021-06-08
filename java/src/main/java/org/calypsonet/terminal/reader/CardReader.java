@@ -60,7 +60,7 @@ public interface CardReader {
    *
    * @param readerProtocol The name of the protocol as known by the reader.
    * @param cardProtocol The name of the protocol as known by the application.
-   * @throws IllegalArgumentException If one of the provided protocol is null.
+   * @throws IllegalArgumentException If one of the provided protocol is null or empty.
    * @throws ReaderProtocolNotSupportedException If the protocol is not supported.
    * @since 1.0
    */
@@ -76,7 +76,7 @@ public interface CardReader {
    * </ul>
    *
    * @param readerProtocol The name of the protocol as known by the reader.
-   * @throws IllegalArgumentException If the provided protocol is null.
+   * @throws IllegalArgumentException If the provided protocol is null or empty.
    * @throws ReaderProtocolNotSupportedException If the protocol is not supported.
    * @since 1.0
    */

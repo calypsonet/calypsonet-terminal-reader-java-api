@@ -12,12 +12,11 @@
 package org.calypsonet.terminal.reader.selection;
 
 import java.util.Map;
+import org.calypsonet.terminal.reader.selection.spi.CardSelection;
 import org.calypsonet.terminal.reader.selection.spi.SmartCard;
 
 /**
  * Result of a selection process.
- *
- * <p>Performed by the {@link CardSelectionService}, one or more selections could be made.
  *
  * <p>Each selection case prepared with the selection service is associated with an index
  * corresponding to its rank in the order of preparation.<br>
@@ -32,7 +31,8 @@ public interface CardSelectionResult {
 
   /**
    * Gets all {@link SmartCard} corresponding to all successful selection cases in a map for which
-   * the key is the selection index.
+   * the key is the selection index provided by the {@link
+   * CardSelectionService#prepareSelection(CardSelection)} method.
    *
    * @return A not null but possibly empty map.
    * @since 1.0
@@ -40,7 +40,7 @@ public interface CardSelectionResult {
   Map<Integer, SmartCard> getSmartCards();
 
   /**
-   * Get the active matching card. I.e. the card that has been selected. <br>
+   * Gets the active matching card. I.e. the card that has been selected.
    *
    * @return Null if there is no active card.
    * @since 1.0

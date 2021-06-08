@@ -12,12 +12,16 @@
 package org.calypsonet.terminal.reader.selection;
 
 /**
- * Marker interface providing run-time type information about data defining the selection response
- * received from the selection process and carried in the {@link
+ * Response of the execution of a scheduled selection scenario provided by a {@link
  * org.calypsonet.terminal.reader.CardReaderEvent}.
  *
- * <p>A card selection response is the result of presenting a card to an observable reader in a
- * selection scenario.
+ * <p>Contains the card's responses to one or more of the scenario's selection cases, i.e. the data
+ * from the selection step itself and any responses to commands that may have been executed
+ * afterwards.
+ *
+ * <p>It is necessary to use the method {@link
+ * CardSelectionService#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)} to
+ * analyze the result.
  *
  * @since 1.0
  */
