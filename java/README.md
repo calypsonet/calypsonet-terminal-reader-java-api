@@ -1,1 +1,1 @@
-This is the **Calypso Networks Association**'s reference **Terminal Reader API** for Java/Kotlin.
+This is the **Calypso Networks Association**'s reference **Terminal Reader API** for Java.
