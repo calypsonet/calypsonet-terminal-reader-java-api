@@ -45,7 +45,7 @@ public interface CardReaderEvent {
    * others cases.
    *
    * <p>It is necessary to use the method {@link
-   * org.calypsonet.terminal.reader.selection.CardSelectionService#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}
+   * org.calypsonet.terminal.reader.selection.CardSelectionManager#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}
    * to analyze the result.
    *
    * @return Null if the event is not carrying a {@link ScheduledCardSelectionsResponse}.

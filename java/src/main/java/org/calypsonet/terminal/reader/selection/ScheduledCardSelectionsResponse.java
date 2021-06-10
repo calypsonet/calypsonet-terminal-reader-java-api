@@ -20,7 +20,7 @@ package org.calypsonet.terminal.reader.selection;
  * afterwards.
  *
  * <p>It is necessary to use the method {@link
- * CardSelectionService#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)} to
+ * CardSelectionManager#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)} to
  * analyze the result.
  *
  * @since 1.0

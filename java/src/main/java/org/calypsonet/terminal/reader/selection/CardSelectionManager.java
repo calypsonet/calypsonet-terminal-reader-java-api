@@ -38,12 +38,16 @@ import org.calypsonet.terminal.reader.selection.spi.CardSelection;
  *       reader.
  * </ul>
  *
+ * <p>By default the selection process stops at the first successful selection. However, it is
+ * possible to force the execution of all selection cases defined in the scenario using the {@link
+ * CardSelectionManager#setMultipleSelectionMode()} method.
+ *
  * <p>The logical channel established with the card can be left open (default) or closed after
  * selection.
  *
  * @since 1.0
  */
-public interface CardSelectionService {
+public interface CardSelectionManager {
 
   /**
    * Sets the multiple selection mode to process all selection cases even in case of successful

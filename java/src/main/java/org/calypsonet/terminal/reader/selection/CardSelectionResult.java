@@ -18,7 +18,7 @@ import org.calypsonet.terminal.reader.selection.spi.SmartCard;
 /**
  * Result of a selection process.
  *
- * <p>Each selection case prepared with the selection service is associated with an index
+ * <p>Each selection case prepared with the card selection manager is associated with an index
  * corresponding to its rank in the order of preparation.<br>
  * The same index is used here to find out which selection cases were successful.<br>
  * However, only one case will correspond to the selected card state. The getters of this interface
@@ -32,7 +32,7 @@ public interface CardSelectionResult {
   /**
    * Gets all {@link SmartCard} corresponding to all successful selection cases in a map for which
    * the key is the selection index provided by the {@link
-   * CardSelectionService#prepareSelection(CardSelection)} method.
+   * CardSelectionManager#prepareSelection(CardSelection)} method.
    *
    * @return A not null but possibly empty map.
    * @since 1.0

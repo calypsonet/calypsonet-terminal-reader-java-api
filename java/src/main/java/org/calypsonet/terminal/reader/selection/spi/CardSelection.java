@@ -11,12 +11,12 @@
  ************************************************************************************** */
 package org.calypsonet.terminal.reader.selection.spi;
 
-import org.calypsonet.terminal.reader.selection.CardSelectionService;
+import org.calypsonet.terminal.reader.selection.CardSelectionManager;
 
 /**
  * Selection scenario implemented and provided by a card extension.
  *
- * <p>Performed by the {@link CardSelectionService}, one or more selections could be made.
+ * <p>Performed by the {@link CardSelectionManager}, one or more selections could be made.
  *
  * @since 1.0
  */
