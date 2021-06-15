@@ -94,6 +94,8 @@ public interface CardSelectionManager {
    * @throws ReaderCommunicationException If the communication with the reader has failed.
    * @throws CardCommunicationException If communication with the card has failed or if the status
    *     word check is enabled in the card request and the card has returned an unexpected code.
+   * @throws InvalidCardResponseException If the card returned invalid data during the selection
+   *     process.
    * @since 1.0
    */
   CardSelectionResult processCardSelectionScenario(CardReader reader);
@@ -129,6 +131,7 @@ public interface CardSelectionManager {
    * @param scheduledCardSelectionsResponse The card selection scenario execution response.
    * @return A not null reference.
    * @throws IllegalArgumentException If the provided card selection response is null.
+   * @throws InvalidCardResponseException If the data returned by the card could not be interpreted.
    * @since 1.0
    */
   CardSelectionResult parseScheduledCardSelectionsResponse(
