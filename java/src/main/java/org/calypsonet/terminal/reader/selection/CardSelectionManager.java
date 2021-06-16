@@ -113,14 +113,14 @@ public interface CardSelectionManager {
    * <p>The result of the scenario execution will be analyzed by {@link
    * #parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}.
    *
-   * @param ObservableCardReader The reader with which the card communication is carried out.
+   * @param observableCardReader The reader with which the card communication is carried out.
    * @param detectionMode The card detection mode.
    * @param notificationMode The card notification mode.
    * @throws IllegalArgumentException If one of the parameters is null.
    * @since 1.0
    */
   void scheduleCardSelectionScenario(
-      ObservableCardReader ObservableCardReader,
+      ObservableCardReader observableCardReader,
       ObservableCardReader.DetectionMode detectionMode,
       ObservableCardReader.NotificationMode notificationMode);
 
