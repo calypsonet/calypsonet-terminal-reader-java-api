@@ -16,5 +16,4 @@ Java implementation:
 C++ implementation:
 * [Terminal Calypso API](https://github.com/calypsonet/calypsonet-terminal-calypso-cpp-api)
 * [Terminal Card API](https://github.com/calypsonet/calypsonet-terminal-card-cpp-api)
-* [Terminal Reader API](https://github.com/calypsonet/calypsonet-terminal-reader-cpp-api)
-* 
+* [Terminal Reader API](https://github.com/calypsonet/calypsonet-terminal-reader-cpp-api) 
