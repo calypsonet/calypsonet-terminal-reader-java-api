@@ -19,7 +19,7 @@ package org.calypsonet.terminal.reader;
 public interface CardReader {
 
   /**
-   * Gets the name of the reader.
+   * Returns the name of the reader.
    *
    * @return A not empty string.
    * @since 1.0.0
