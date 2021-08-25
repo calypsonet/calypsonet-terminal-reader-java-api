@@ -14,13 +14,13 @@ package org.calypsonet.terminal.reader;
 /**
  * Indicates that the current card protocol is not supported by the reader.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 public class ReaderProtocolNotSupportedException extends RuntimeException {
 
   /**
    * @param cardProtocol The identification data used to identify the card.
-   * @since 1.0
+   * @since 1.0.0
    */
   public ReaderProtocolNotSupportedException(String cardProtocol) {
     super("The card protocol " + cardProtocol + " is not supported.");

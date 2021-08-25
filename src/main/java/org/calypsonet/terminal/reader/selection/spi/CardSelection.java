@@ -18,6 +18,6 @@ import org.calypsonet.terminal.reader.selection.CardSelectionManager;
  *
  * <p>Performed by the {@link CardSelectionManager}, one or more selections could be made.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 public interface CardSelection {}

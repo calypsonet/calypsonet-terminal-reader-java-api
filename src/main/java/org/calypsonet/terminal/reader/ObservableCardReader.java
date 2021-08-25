@@ -17,7 +17,7 @@ import org.calypsonet.terminal.reader.spi.CardReaderObserverSpi;
 /**
  * Card reader able to observe the insertion/removal of cards.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 public interface ObservableCardReader extends CardReader {
 
@@ -30,7 +30,7 @@ public interface ObservableCardReader extends CardReader {
    *
    * @param exceptionHandler The exception handler implemented by the application.
    * @throws IllegalArgumentException If the provided handler is null.
-   * @since 1.0
+   * @since 1.0.0
    */
   void setReaderObservationExceptionHandler(
       CardReaderObservationExceptionHandlerSpi exceptionHandler);
@@ -43,7 +43,7 @@ public interface ObservableCardReader extends CardReader {
    *
    * @param observer An observer object implementing the required interface (should be not null).
    * @throws IllegalArgumentException If the provided observer is null.
-   * @since 1.0
+   * @since 1.0.0
    */
   void addObserver(CardReaderObserverSpi observer);
 
@@ -54,14 +54,14 @@ public interface ObservableCardReader extends CardReader {
    *
    * @param observer The observer object to be removed (should be not null).
    * @throws IllegalArgumentException If the provided observer is null.
-   * @since 1.0
+   * @since 1.0.0
    */
   void removeObserver(CardReaderObserverSpi observer);
 
   /**
    * Unregisters all observers at once.
    *
-   * @since 1.0
+   * @since 1.0.0
    */
   void clearObservers();
 
@@ -69,7 +69,7 @@ public interface ObservableCardReader extends CardReader {
    * Provides the current number of registered observers.
    *
    * @return An int.
-   * @since 1.0
+   * @since 1.0.0
    */
   int countObservers();
 
@@ -81,14 +81,14 @@ public interface ObservableCardReader extends CardReader {
    *
    * @param detectionMode The card detection mode.
    * @throws IllegalArgumentException If the provided detection mode is null.
-   * @since 1.0
+   * @since 1.0.0
    */
   void startCardDetection(DetectionMode detectionMode);
 
   /**
    * Stops the card detection.
    *
-   * @since 1.0
+   * @since 1.0.0
    */
   void stopCardDetection();
 
@@ -104,28 +104,28 @@ public interface ObservableCardReader extends CardReader {
    * there are cases where exchanges with the card are interrupted (e.g. by an exception), in which
    * case it is necessary to explicitly close the channel using this method.
    *
-   * @since 1.0
+   * @since 1.0.0
    */
   void finalizeCardProcessing();
 
   /**
    * Card detection management options to be applied after processing a card.
    *
-   * @since 1.0
+   * @since 1.0.0
    */
   enum DetectionMode {
 
     /**
      * Continue waiting for the insertion of a next card.
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     REPEATING,
 
     /**
      * Stop and wait for a restart signal.
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     SINGLESHOT
   }
@@ -133,7 +133,7 @@ public interface ObservableCardReader extends CardReader {
   /**
    * The options that apply when a card is detected.
    *
-   * @since 1.0
+   * @since 1.0.0
    */
   enum NotificationMode {
 
@@ -141,14 +141,14 @@ public interface ObservableCardReader extends CardReader {
      * All cards presented to the readers are notified to the observers, regardless of the result of
      * the selection.
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     ALWAYS,
     /**
      * Only the cards that have been successfully selected will be notified to the observers. The
      * others will be ignored and the application will not be aware of their presence.
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     MATCHED_ONLY
   }

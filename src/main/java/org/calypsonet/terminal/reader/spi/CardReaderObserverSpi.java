@@ -17,7 +17,7 @@ import org.calypsonet.terminal.reader.CardReaderEvent;
  * Reader observer to implement in order to receive {@link CardReaderEvent} from a {@link
  * org.calypsonet.terminal.reader.ObservableCardReader}.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 public interface CardReaderObserverSpi {
 
@@ -28,7 +28,7 @@ public interface CardReaderObserverSpi {
    * depend on the implementation used.
    *
    * @param readerEvent The not null {@link CardReaderEvent} containing the event data.
-   * @since 1.0
+   * @since 1.0.0
    */
   void onReaderEvent(final CardReaderEvent readerEvent);
 }

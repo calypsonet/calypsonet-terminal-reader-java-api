@@ -15,7 +15,7 @@ package org.calypsonet.terminal.reader.spi;
  * Reader observation error handler to implement in order to be notified of errors that may occur
  * during operations carried out by the card monitoring process.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 public interface CardReaderObservationExceptionHandlerSpi {
 
@@ -27,7 +27,7 @@ public interface CardReaderObservationExceptionHandlerSpi {
    * @param contextInfo The context information.
    * @param readerName The reader name.
    * @param e The original exception.
-   * @since 1.0
+   * @since 1.0.0
    */
   void onReaderObservationError(String contextInfo, String readerName, Throwable e);
 }

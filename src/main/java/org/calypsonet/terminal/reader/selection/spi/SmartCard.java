@@ -21,7 +21,7 @@ package org.calypsonet.terminal.reader.selection.spi;
  *
  * <p>Must be implemented and possibly extended by a card extension to meet its specific needs.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 public interface SmartCard {
 
@@ -42,7 +42,7 @@ public interface SmartCard {
    * which can be either a hexadecimal string or any other relevant information.
    *
    * @return Null if no power-on data is available.
-   * @since 1.0
+   * @since 1.0.0
    */
   String getPowerOnData();
 
@@ -51,7 +51,7 @@ public interface SmartCard {
    * word).
    *
    * @return Null if no selection application has been performed.
-   * @since 1.0
+   * @since 1.0.0
    */
   byte[] getSelectApplicationResponse();
 }

@@ -14,7 +14,7 @@ package org.calypsonet.terminal.reader;
 /**
  * Configurable Card reader driving the underlying hardware to manage the card detection.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 public interface ConfigurableCardReader extends CardReader {
 
@@ -37,7 +37,7 @@ public interface ConfigurableCardReader extends CardReader {
    * @param cardProtocol The name of the protocol as known by the application.
    * @throws IllegalArgumentException If one of the provided protocol is null or empty.
    * @throws ReaderProtocolNotSupportedException If the protocol is not supported.
-   * @since 1.0
+   * @since 1.0.0
    */
   void activateProtocol(String readerProtocol, String cardProtocol);
 
@@ -53,7 +53,7 @@ public interface ConfigurableCardReader extends CardReader {
    * @param readerProtocol The name of the protocol as known by the reader.
    * @throws IllegalArgumentException If the provided protocol is null or empty.
    * @throws ReaderProtocolNotSupportedException If the protocol is not supported.
-   * @since 1.0
+   * @since 1.0.0
    */
   void deactivateProtocol(String readerProtocol);
 }

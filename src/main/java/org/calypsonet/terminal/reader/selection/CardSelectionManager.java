@@ -45,7 +45,7 @@ import org.calypsonet.terminal.reader.selection.spi.CardSelection;
  * <p>The logical channel established with the card can be left open (default) or closed after
  * selection.
  *
- * @since 1.0
+ * @since 1.0.0
  */
 public interface CardSelectionManager {
 
@@ -55,7 +55,7 @@ public interface CardSelectionManager {
    *
    * <p>The multiple selection mode is disabled by default.
    *
-   * @since 1.0
+   * @since 1.0.0
    */
   void setMultipleSelectionMode();
 
@@ -69,7 +69,7 @@ public interface CardSelectionManager {
    * @param cardSelection The card selection.
    * @return A positive int.
    * @throws IllegalArgumentException If the provided card selection is null.
-   * @since 1.0
+   * @since 1.0.0
    */
   int prepareSelection(CardSelection cardSelection);
 
@@ -80,7 +80,7 @@ public interface CardSelectionManager {
    * <p>It is thus possible to chain several selections on the same card selection scenario by
    * restarting the card connection sequence.
    *
-   * @since 1.0
+   * @since 1.0.0
    */
   void prepareReleaseChannel();
 
@@ -96,7 +96,7 @@ public interface CardSelectionManager {
    *     word check is enabled in the card request and the card has returned an unexpected code.
    * @throws InvalidCardResponseException If the card returned invalid data during the selection
    *     process.
-   * @since 1.0
+   * @since 1.0.0
    */
   CardSelectionResult processCardSelectionScenario(CardReader reader);
 
@@ -117,7 +117,7 @@ public interface CardSelectionManager {
    * @param detectionMode The card detection mode.
    * @param notificationMode The card notification mode.
    * @throws IllegalArgumentException If one of the parameters is null.
-   * @since 1.0
+   * @since 1.0.0
    */
   void scheduleCardSelectionScenario(
       ObservableCardReader observableCardReader,
@@ -132,7 +132,7 @@ public interface CardSelectionManager {
    * @return A not null reference.
    * @throws IllegalArgumentException If the provided card selection response is null.
    * @throws InvalidCardResponseException If the data returned by the card could not be interpreted.
-   * @since 1.0
+   * @since 1.0.0
    */
   CardSelectionResult parseScheduledCardSelectionsResponse(
       ScheduledCardSelectionsResponse scheduledCardSelectionsResponse);
