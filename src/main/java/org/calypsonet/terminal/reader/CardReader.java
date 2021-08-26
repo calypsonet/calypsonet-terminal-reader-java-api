@@ -12,7 +12,8 @@
 package org.calypsonet.terminal.reader;
 
 /**
- * Card reader driving the underlying hardware to manage the card detection.
+ * Interface that provides the methods related to card detection and its associated
+ * protocols for a specific Card Reader instance.
  *
  * @since 1.0.0
  */
