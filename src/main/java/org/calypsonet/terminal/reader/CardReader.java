@@ -12,7 +12,8 @@
 package org.calypsonet.terminal.reader;
 
 /**
- * Card reader driving the underlying hardware to manage the card detection.
+ * Interface that provides the methods related to card detection and its associated
+ * protocols for a specific Card Reader instance.
  *
  * @since 1.0.0
  */
@@ -21,23 +22,23 @@ public interface CardReader {
   /**
    * Returns the name of the reader.
    *
-   * @return A not empty string.
+   * @return A non-empty string.
    * @since 1.0.0
    */
   String getName();
 
   /**
-   * Tells if the card communication mode is contactless.
+   * Checks if the card communication mode is contactless.
    *
-   * @return True if the communication is contactless.
+   * @return <code>true</code> if the communication mode is contactless else <code>false</code>.
    * @since 1.0.0
    */
   boolean isContactless();
 
   /**
-   * Checks if is the card present.
+   * Checks if the card is present.
    *
-   * @return True if a card is inserted in the reader.
+   * @return <code>true</code> if a card is inserted in the reader else <code>false</code>.
    * @throws ReaderCommunicationException If the communication with the reader has failed.
    * @since 1.0.0
    */
