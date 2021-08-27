@@ -22,7 +22,7 @@ public interface CardReader {
   /**
    * Returns the name of the reader.
    *
-   * @return A non-empty string.
+   * @return A non-empty string containing the name of the reader.
    * @since 1.0.0
    */
   String getName();
