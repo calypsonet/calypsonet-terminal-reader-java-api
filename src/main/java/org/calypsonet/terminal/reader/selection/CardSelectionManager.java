@@ -22,35 +22,41 @@ import org.calypsonet.terminal.reader.selection.spi.CardSelection;
  *
  * <p>A card selection scenario consists of one or more selection cases based on a {@link
  * CardSelection}.<br>
- * A card selection targets a specific card and defines optional commands to be executed after the
+ * A card selection case targets a specific card. <br>
+ * Optionally, additional commands can be defined to be executed after the
  * successful selection of the card. <br>
- * If a card selection case fails, the service will try with the next selection defined in the
- * scenario, if any. <br>
- * If a card selection case succeeds, the service will execute the next selection only if the
- * multiple selection mode is set (disabled by default).
+ *
+ * <p>If a card selection case fails, the service will try with the next card selection case 
+ * defined in the scenario, until there are no further card selection cases available.
+ *
+ * <p>If a card selection case succeeds:
+ *
+ * <ul>
+ *   <li>By default, the service stops at the first successful card selection.
+ *   <li>If the multiple selection mode is set (disabled by default), the service will execute the
+ *       next selection. This multiple selection mode force the execution of all card selection 
+ *       cases defined in the scenario. This method can be enabled using the {@link
+ *       CardSelectionManager#setMultipleSelectionMode()} method
+ * </ul>
+ *
+ * <p>The logical channel established with the card can be left open (default) or closed after
+ * card selection (by using the {@link CardSelectionManager#prepareReleaseChannel()} method).
  *
  * <p>This service allows to:
  *
  * <ul>
- *   <li>prepare the card selection scenario,
- *   <li>make an explicit selection of a card (when the card is already present),
- *   <li>to schedule the execution of the selection as soon as a card is presented to an observable
+ *   <li>Prepare the card selection scenario.
+ *   <li>Make an explicit selection of a card (when the card is already present).
+ *   <li>Schedule the execution of the selection as soon as a card is presented to an observable
  *       reader.
  * </ul>
- *
- * <p>By default the selection process stops at the first successful selection. However, it is
- * possible to force the execution of all selection cases defined in the scenario using the {@link
- * CardSelectionManager#setMultipleSelectionMode()} method.
- *
- * <p>The logical channel established with the card can be left open (default) or closed after
- * selection.
  *
  * @since 1.0.0
  */
 public interface CardSelectionManager {
 
   /**
-   * Sets the multiple selection mode to process all selection cases even in case of successful
+   * Sets the multiple selection mode to process all selection cases even in case of a successful
    * selection.
    *
    * <p>The multiple selection mode is disabled by default.
@@ -67,7 +73,7 @@ public interface CardSelectionManager {
    * retrieve the corresponding result in the {@link CardSelectionResult} object.
    *
    * @param cardSelection The card selection.
-   * @return A positive int.
+   * @return A non-negative int.
    * @throws IllegalArgumentException If the provided card selection is null.
    * @since 1.0.0
    */
@@ -85,11 +91,11 @@ public interface CardSelectionManager {
   void prepareReleaseChannel();
 
   /**
-   * Executes explicitly a previously prepared card selection scenario and returns the card
+   * Explicitly executes a previously prepared card selection scenario and returns the card
    * selection result.
    *
    * @param reader The reader to communicate with the card.
-   * @return A not null reference.
+   * @return A non-null reference.
    * @throws IllegalArgumentException If the provided reader is null.
    * @throws ReaderCommunicationException If the communication with the reader has failed.
    * @throws CardCommunicationException If communication with the card has failed or if the status
@@ -104,7 +110,7 @@ public interface CardSelectionManager {
    * Schedules the execution of the prepared card selection scenario as soon as a card is presented
    * to the provided {@link ObservableCardReader}.
    *
-   * <p>{@link org.calypsonet.terminal.reader.CardReaderEvent} are notified to the observer
+   * <p>{@link org.calypsonet.terminal.reader.CardReaderEvent} are pushed to the observer
    * according to the specified notification mode.
    *
    * <p>The reader's behavior at the end of the card processing is defined by the specified {@link
@@ -126,10 +132,10 @@ public interface CardSelectionManager {
 
   /**
    * Analyzes the responses provided by a {@link org.calypsonet.terminal.reader.CardReaderEvent}
-   * following the insertion of a card and the execution of the selection scenario.
+   * following the insertion of a card and the execution of the card selection scenario.
    *
    * @param scheduledCardSelectionsResponse The card selection scenario execution response.
-   * @return A not null reference.
+   * @return A non-null reference.
    * @throws IllegalArgumentException If the provided card selection response is null.
    * @throws InvalidCardResponseException If the data returned by the card could not be interpreted.
    * @since 1.0.0
