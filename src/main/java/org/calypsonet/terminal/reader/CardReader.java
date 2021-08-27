@@ -30,7 +30,7 @@ public interface CardReader {
   /**
    * Checks if the card communication mode is contactless.
    *
-   * @return <code>true</code> if the communication mode is contactless else <code>false</code>.
+   * @return <b>true</b> if the communication mode is contactless else <b>false</b>.
    * @since 1.0.0
    */
   boolean isContactless();
@@ -38,7 +38,7 @@ public interface CardReader {
   /**
    * Checks if the card is present.
    *
-   * @return <code>true</code> if a card is inserted in the reader else <code>false</code>.
+   * @return <b>true</b> if a card is inserted in the reader else <b>false</b>.
    * @throws ReaderCommunicationException If the communication with the reader has failed.
    * @since 1.0.0
    */
