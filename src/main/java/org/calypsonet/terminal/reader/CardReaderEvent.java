@@ -69,7 +69,7 @@ public interface CardReaderEvent {
     CARD_INSERTED,
 
     /**
-     * A card has been inserted and matched the selection.
+     * A card has been inserted that matches the selection.
      *
      * @since 1.0.0
      */
