@@ -21,22 +21,21 @@ public interface ConfigurableCardReader extends CardReader {
 
   /**
    * Activates the reader communication protocol by associating the provided reader communication 
-   * protocol name and the protocol name defined by the application.
+   * protocol name and the communication protocol name defined by the application.
    *
    * <ul>
    *   <li>Activates the detection of cards using the provided reader communication protocol.
-   *   <li>Asks the reader to accept any card using this communication protocol during the selection 
-   *       phase.
    *   <li>Internally associates the two strings provided as arguments.
    * </ul>
    *
    * <p>The association between the communication protocol name known by the reader and the 
-   * communication protocol name known by the application is intended to allow a unique protocol 
-   * name to be set when constructing a card selector as defined by the <b>Terminal Card API</b>
-   * regardless of the type of reader that will be used.
+   * communication protocol name defined by the application is intended to manage non-ISO cards.
+   * It allows a unique protocol name to be set when constructing a card selector as defined by 
+   * the <b>Terminal Card API</b> regardless of the type of reader that will be used.
    *
    * @param readerProtocol The name of the communication protocol as known by the reader.
-   * @param cardProtocol The name of the communication protocol as known by the application.
+   *                       See the reader documentation for the list of available communication protocols.
+   * @param cardProtocol The name of the communication protocol of the card which be detect as defined by the application.
    * @throws IllegalArgumentException If one of the provided communication protocol is null or empty.
    * @throws ReaderProtocolNotSupportedException If the communication protocol is not supported.
    * @since 1.0.0
@@ -44,15 +43,11 @@ public interface ConfigurableCardReader extends CardReader {
   void activateProtocol(String readerProtocol, String cardProtocol);
 
   /**
-   * Deactivates the provided card communication protocol.
-   *
-   * <ul>
-   *   <li>Inhibits the detection of cards using this communication protocol.
-   *   <li>Ask the reader to ignore this protocol if a card using this communication 
-   *       protocol is identified during the selection phase.
-   * </ul>
-   *
-   * @param readerProtocol The name of the communication protocol as known by the reader.
+   * Deactivates the provided reader communication protocol.
+   * Inhibits the detection of cards using this communication protocol.
+   * 
+   * @param readerProtocol The name of the communication protocol as known by the reader. 
+   *                       See the reader documentation for the list of available communication protocols.
    * @throws IllegalArgumentException If the provided communication protocol is null or empty.
    * @throws ReaderProtocolNotSupportedException If the communication protocol is not supported.
    * @since 1.0.0
