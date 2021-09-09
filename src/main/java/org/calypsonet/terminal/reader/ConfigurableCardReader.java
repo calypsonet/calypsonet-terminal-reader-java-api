@@ -34,22 +34,22 @@ public interface ConfigurableCardReader extends CardReader {
    * the <b>Terminal Card API</b> regardless of the type of reader that will be used.
    *
    * @param readerProtocol The name of the communication protocol as known by the reader.
-   *                       See the reader documentation for the list of available communication protocols.
+   *                       See the reader documentation for the list of supported communication protocols.
    * @param cardProtocol The name of the communication protocol of the card which be detect as defined by the application.
-   * @throws IllegalArgumentException If one of the provided communication protocol is null or empty.
-   * @throws ReaderProtocolNotSupportedException If the communication protocol is not supported.
+   * @throws IllegalArgumentException If one of the provided communication protocols is null or empty.
+   * @throws ReaderProtocolNotSupportedException If the reader communication protocol is not supported.
    * @since 1.0.0
    */
   void activateProtocol(String readerProtocol, String cardProtocol);
 
   /**
    * Deactivates the provided reader communication protocol.
-   * Inhibits the detection of cards using this communication protocol.
+   * Inhibits the detection of cards using this reader communication protocol.
    * 
    * @param readerProtocol The name of the communication protocol as known by the reader. 
-   *                       See the reader documentation for the list of available communication protocols.
-   * @throws IllegalArgumentException If the provided communication protocol is null or empty.
-   * @throws ReaderProtocolNotSupportedException If the communication protocol is not supported.
+   *                       See the reader documentation for the list of supported communication protocols.
+   * @throws IllegalArgumentException If the provided reader communication protocol is null or empty.
+   * @throws ReaderProtocolNotSupportedException If the reader communication protocol is not supported.
    * @since 1.0.0
    */
   void deactivateProtocol(String readerProtocol);
