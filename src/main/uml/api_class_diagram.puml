@@ -1,0 +1,204 @@
+@startuml
+title
+    Calypsonet - calypsonet-terminal-reader-java-api - 1.0 (30/07/2021)
+end title
+
+' == THEME ==
+
+'Couleurs issues de : https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-design-plat/
+!define C_GREY1 F8F9F9
+!define C_GREY2 F2F3F4
+!define C_GREY3 E5E7E9
+!define C_GREY4 D7DBDD
+!define C_GREY5 CACFD2
+!define C_GREY6 BDC3C7
+!define C_LINK 3498DB
+!define C_USE 27AE60
+
+skinparam Shadowing false
+skinparam ClassFontStyle italic
+skinparam ClassBorderColor #D4AC0D
+skinparam stereotypeABorderColor #A9DCDF
+skinparam stereotypeIBorderColor #B4A7E5
+skinparam stereotypeCBorderColor #ADD1B2
+skinparam stereotypeEBorderColor #EB93DF
+' Red
+skinparam ClassBackgroundColor<<red>> #FDEDEC
+skinparam ClassBorderColor<<red>> #E74C3C
+hide <<red>> stereotype
+' Purple
+skinparam ClassBackgroundColor<<purple>> #F4ECF7
+skinparam ClassBorderColor<<purple>> #8E44AD
+hide <<purple>> stereotype
+' blue
+skinparam ClassBackgroundColor<<blue>> #EBF5FB
+skinparam ClassBorderColor<<blue>> #3498DB
+hide <<blue>> stereotype
+' Green
+skinparam ClassBackgroundColor<<green>> #E9F7EF
+skinparam ClassBorderColor<<green>> #27AE60
+hide <<green>> stereotype
+' Grey
+skinparam ClassBackgroundColor<<grey>> #EAECEE
+skinparam ClassBorderColor<<grey>> #2C3E50
+hide <<grey>> stereotype
+
+' == CONTENT ==
+
+package "org.calypsonet.terminal.reader" as readerApi {
+    ' SERVICE
+    together {
+        +class "**final** ReaderApiProperties" as ApiProperties {
+            +{static} **final** String VERSION
+        }
+        +interface CardReader {
+            +String getName ()
+            +boolean isContactless ()
+            +boolean isCardPresent ()
+        }
+        +interface ConfigurableCardReader extends CardReader {
+            +void activateProtocol (String readerProtocol, String cardProtocol)
+            +void deactivateProtocol (String readerProtocol)
+        }
+        +interface ObservableCardReader extends CardReader {
+            +void setReaderObservationExceptionHandler (
+                \tCardReaderObservationExceptionHandlerSpi exceptionHandler)
+
+            +void addObserver (CardReaderObserverSpi observer)
+            +void removeObserver (CardReaderObserverSpi observer)
+            +void clearObservers ()
+            +int countObservers ()
+
+            +void startCardDetection (DetectionMode detectionMode)
+            +void stopCardDetection ()
+            +void finalizeCardProcessing ()
+        }
+        +enum DetectionMode {
+            REPEATING
+            SINGLESHOT
+        }
+        +enum NotificationMode {
+            ALWAYS
+            MATCHED_ONLY
+        }
+        +interface CardReaderEvent {
+            +String getReaderName ()
+            +Type getType ()
+            +ScheduledCardSelectionsResponse getScheduledCardSelectionsResponse ()
+        }
+        +enum "Type" as CardReaderEventType {
+            CARD_INSERTED
+            CARD_MATCHED
+            CARD_REMOVED
+            UNAVAILABLE
+        }
+        ' SPI
+        package "spi" as readerSpi {
+            +interface CardReaderObserverSpi {
+                +void onReaderEvent (
+                    \tCardReaderEvent cardReaderEvent)
+            }
+            +interface CardReaderObservationExceptionHandlerSpi {
+                +void onReaderObservationError (String contextInfo,
+                    \tString readerName, Throwable e)
+            }
+        }
+    }
+
+    ' SELECTION
+    package "selection" as selectionApi {
+        ' Selection
+        +interface CardSelectionManager {
+            +void setMultipleSelectionMode ()
+
+            +int prepareSelection (CardSelection cardSelection)
+            +void prepareReleaseChannel ()
+
+            +CardSelectionResult processCardSelectionScenario (CardReader cardReader)
+
+            +void scheduleCardSelectionScenario (ObservableCardReader observableCardReader,
+                \tDetectionMode detectionMode, NotificationMode notificationMode)
+            +CardSelectionResult parseScheduledCardSelectionsResponse (
+                \tScheduledCardSelectionsResponse scheduledCardSelectionsResponse)
+        }
+
+        ' Card Extension SPI
+        package "spi" as selectionSpi {
+            +interface CardSelection {
+            }
+            +interface "SmartCard" as SmartCard {
+                +String getPowerOnData ()
+                +byte[] getSelectApplicationResponse ()
+            }
+        }
+        +interface CardSelectionResult {
+            +Map<Integer, SmartCard> getSmartCards ()
+            +SmartCard getActiveSmartCard ()
+            +int getActiveSelectionIndex ()
+        }
+        +interface ScheduledCardSelectionsResponse {
+        }
+
+        +class "<<RuntimeException>>\nInvalidCardResponseException" as InvalidCardResponseException {
+            +InvalidCardResponseException (String message)
+            +InvalidCardResponseException (String message,
+                \tThrowable cause)
+        }
+    }
+    ' EXCEPTIONS
+    'together {
+        +class "<<RuntimeException>>\nReaderCommunicationException" as ReaderCommunicationException {
+            +ReaderCommunicationException (String message)
+            +ReaderCommunicationException (String message,
+                \tThrowable cause)
+        }
+        +class "<<RuntimeException>>\nReaderProtocolNotSupportedException" as ReaderProtocolNotSupportedException {
+            +ReaderProtocolNotSupportedException (String cardProtocol)
+        }
+        +class "<<RuntimeException>>\nCardCommunicationException" as CardCommunicationException {
+            +CardCommunicationException (String message)
+            +CardCommunicationException (String message,
+                \tThrowable cause)
+        }
+    '}
+}
+
+' Associations
+
+ObservableCardReader +-- NotificationMode
+ObservableCardReader +-left- DetectionMode
+ObservableCardReader .left.> DetectionMode #C_USE : use >
+ObservableCardReader ..> CardReaderObservationExceptionHandlerSpi #C_USE : use >
+
+CardReaderEvent +-- CardReaderEventType
+CardReaderEvent ..> CardReaderEventType #C_LINK : provide >
+CardReaderEvent .up.> ScheduledCardSelectionsResponse #C_LINK : provide >
+
+CardSelectionResult ..> SmartCard #C_LINK : provide >
+
+CardSelectionManager ..> CardSelection #C_USE : use >
+CardSelectionManager ..> ScheduledCardSelectionsResponse #C_USE : use >
+CardSelectionManager ..> CardSelectionResult #C_LINK : provide >
+CardSelectionManager .right.> CardReader #C_USE : use >
+CardSelectionManager ..> NotificationMode #C_USE : use >
+CardSelectionManager ..> DetectionMode #C_USE : use >
+CardSelectionManager .left.> InvalidCardResponseException #C_LINK : throw >
+
+ObservableCardReader ..> CardReaderObserverSpi #C_USE : use >
+
+CardReaderObserverSpi ..> CardReaderEvent #C_USE : use >
+
+' == LAYOUT ==
+
+SmartCard -[hidden]- ReaderProtocolNotSupportedException
+ReaderProtocolNotSupportedException -[hidden]- ReaderCommunicationException
+ReaderCommunicationException -[hidden]right- CardCommunicationException
+
+' == STYLE ==
+
+package readerApi #C_GREY1 {}
+package readerSpi #C_GREY2 {}
+package selectionApi #C_GREY2 {}
+package selectionSpi #C_GREY3 {}
+
+@enduml
