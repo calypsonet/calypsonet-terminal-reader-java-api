@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.calypsonet.terminal.reader"},{"l":"org.calypsonet.terminal.reader.selection"},{"l":"org.calypsonet.terminal.reader.selection.spi"},{"l":"org.calypsonet.terminal.reader.spi"}]
