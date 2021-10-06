@@ -12,8 +12,8 @@
 package org.calypsonet.terminal.reader;
 
 /**
- * Interface that provides the methods related to card detection and its associated
- * protocols for a specific Card Reader instance.
+ * Interface that provides the methods related to card detection and its associated protocols for a
+ * specific Card Reader instance.
  *
  * @since 1.0.0
  */

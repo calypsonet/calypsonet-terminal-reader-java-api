@@ -24,8 +24,8 @@ public interface CardReaderObserverSpi {
   /**
    * Invoked when a reader event occurs.
    *
-   * <p>The event notification should be done <b>sequentially</b> and <b>synchronously</b> but 
-   * this may depend on the implementation used.
+   * <p>The event notification should be done <b>sequentially</b> and <b>synchronously</b> but this
+   * may depend on the implementation used.
    *
    * @param readerEvent The not null {@link CardReaderEvent} containing the event data.
    * @since 1.0.0

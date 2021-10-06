@@ -23,24 +23,24 @@ import org.calypsonet.terminal.reader.selection.spi.CardSelection;
  * <p>A card selection scenario consists of one or more selection cases based on a {@link
  * CardSelection}.<br>
  * A card selection case targets a specific card. <br>
- * Optionally, additional commands can be defined to be executed after the
- * successful selection of the card. <br>
+ * Optionally, additional commands can be defined to be executed after the successful selection of
+ * the card. <br>
  *
- * <p>If a card selection case fails, the service will try with the next card selection case 
- * defined in the scenario, until there are no further card selection cases available.
+ * <p>If a card selection case fails, the service will try with the next card selection case defined
+ * in the scenario, until there are no further card selection cases available.
  *
  * <p>If a card selection case succeeds:
  *
  * <ul>
  *   <li>By default, the service stops at the first successful card selection.
  *   <li>If the multiple selection mode is set (disabled by default), the service will execute the
- *       next selection. This multiple selection mode force the execution of all card selection 
+ *       next selection. This multiple selection mode force the execution of all card selection
  *       cases defined in the scenario. This method can be enabled using the {@link
  *       CardSelectionManager#setMultipleSelectionMode()} method
  * </ul>
  *
- * <p>The logical channel established with the card can be left open (default) or closed after
- * card selection (by using the {@link CardSelectionManager#prepareReleaseChannel()} method).
+ * <p>The logical channel established with the card can be left open (default) or closed after card
+ * selection (by using the {@link CardSelectionManager#prepareReleaseChannel()} method).
  *
  * <p>This service allows to:
  *
@@ -110,8 +110,8 @@ public interface CardSelectionManager {
    * Schedules the execution of the prepared card selection scenario as soon as a card is presented
    * to the provided {@link ObservableCardReader}.
    *
-   * <p>{@link org.calypsonet.terminal.reader.CardReaderEvent} are pushed to the observer
-   * according to the specified notification mode.
+   * <p>{@link org.calypsonet.terminal.reader.CardReaderEvent} are pushed to the observer according
+   * to the specified notification mode.
    *
    * <p>The reader's behavior at the end of the card processing is defined by the specified {@link
    * ObservableCardReader.DetectionMode}.

@@ -40,16 +40,16 @@ public interface CardReaderEvent {
   Type getType();
 
   /**
-   * Returns the card selection responses when it is available and null in all other cases.
-   * It may be available when the event type is {@link Type#CARD_INSERTED}
-   * and always present when the event type is {@link Type#CARD_MATCHED}.
+   * Returns the card selection responses when it is available and null in all other cases. It may
+   * be available when the event type is {@link Type#CARD_INSERTED} and always present when the
+   * event type is {@link Type#CARD_MATCHED}.
    *
    * <p>It is necessary to use the method {@link
    * org.calypsonet.terminal.reader.selection.CardSelectionManager#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}
    * to analyze the result.
    *
-   * @return Null if the event is not carrying a {@link ScheduledCardSelectionsResponse}
-   *         else a {@link ScheduledCardSelectionsResponse} object.
+   * @return Null if the event is not carrying a {@link ScheduledCardSelectionsResponse} else a
+   *     {@link ScheduledCardSelectionsResponse} object.
    * @since 1.0.0
    */
   ScheduledCardSelectionsResponse getScheduledCardSelectionsResponse();
