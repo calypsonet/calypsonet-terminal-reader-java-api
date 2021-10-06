@@ -12,8 +12,7 @@
 package org.calypsonet.terminal.reader;
 
 /**
- * Interface that provides the methods related to the configuration of communication protocols for a
- * specific Card Reader instance
+ * Configurable card reader providing the methods to manage the card protocols.
  *
  * @since 1.0.0
  */

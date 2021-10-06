@@ -48,8 +48,7 @@ public interface CardReaderEvent {
    * org.calypsonet.terminal.reader.selection.CardSelectionManager#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}
    * to analyze the result.
    *
-   * @return Null if the event is not carrying a {@link ScheduledCardSelectionsResponse} else a
-   *     {@link ScheduledCardSelectionsResponse} object.
+   * @return Null if the event is not carrying a {@link ScheduledCardSelectionsResponse}.
    * @since 1.0.0
    */
   ScheduledCardSelectionsResponse getScheduledCardSelectionsResponse();
