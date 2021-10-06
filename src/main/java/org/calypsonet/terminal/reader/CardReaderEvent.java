@@ -17,32 +17,32 @@ import org.calypsonet.terminal.reader.selection.ScheduledCardSelectionsResponse;
  * Card event data container indicating a change of state.
  *
  * <p>Contains the event origin (reader name), the event type and possibly the card selection
- * response in the case of {@link Type#CARD_INSERTED} or {@link Type#CARD_MATCHED} events.
+ * response (when available).
  *
  * @since 1.0.0
  */
 public interface CardReaderEvent {
 
   /**
-   * Gets the name of the reader that generated the event.
+   * Returns the name of the reader that generated the event.
    *
-   * @return A not empty string.
+   * @return A non-empty string.
    * @since 1.0.0
    */
   String getReaderName();
 
   /**
-   * Gets the reader event type.
+   * Returns the card reader event type.
    *
-   * @return A not null value.
+   * @return A non-null value.
    * @since 1.0.0
    */
   Type getType();
 
   /**
-   * Gets the card selection responses that may be present when the event is {@link
-   * Type#CARD_INSERTED}, always present when the event is {@link Type#CARD_MATCHED} and null in the
-   * others cases.
+   * Returns the card selection responses when it is available and null in all other cases. It may
+   * be available when the event type is {@link Type#CARD_INSERTED} and always present when the
+   * event type is {@link Type#CARD_MATCHED}.
    *
    * <p>It is necessary to use the method {@link
    * org.calypsonet.terminal.reader.selection.CardSelectionManager#parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}
@@ -68,7 +68,7 @@ public interface CardReaderEvent {
     CARD_INSERTED,
 
     /**
-     * A card has been inserted and matched the selection.
+     * A card has been inserted that matches the selection.
      *
      * @since 1.0.0
      */

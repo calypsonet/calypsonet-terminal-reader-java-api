@@ -12,47 +12,48 @@
 package org.calypsonet.terminal.reader;
 
 /**
- * Configurable Card reader driving the underlying hardware to manage the card detection.
+ * Configurable card reader providing the methods to manage the card protocols.
  *
  * @since 1.0.0
  */
 public interface ConfigurableCardReader extends CardReader {
 
   /**
-   * Activates the reader protocol having the provided reader protocol name and associates it with
-   * the protocol name defined by the application.
+   * Activates the reader communication protocol by associating the provided reader communication
+   * protocol name and the communication protocol name defined by the application.
    *
    * <ul>
-   *   <li>Activates the detection of cards using the provided reader protocol.
-   *   <li>Asks the reader to accept any card using this protocol during the selection phase.
+   *   <li>Activates the detection of cards using the provided reader communication protocol.
    *   <li>Internally associates the two strings provided as arguments.
    * </ul>
    *
-   * <p>The association between the protocol name known by the reader and the protocol name known by
-   * the application is intended to allow a unique protocol name to be set when constructing a card
-   * selector as defined by the <b>Terminal Card API</b> regardless of the type of reader that will
-   * be used.
+   * <p>The association between the communication protocol name known by the reader and the
+   * communication protocol name defined by the application is intended to manage non-ISO cards. It
+   * allows a unique protocol name to be set when constructing a card selector as defined by the
+   * <b>Terminal Card API</b> regardless of the type of reader that will be used.
    *
-   * @param readerProtocol The name of the protocol as known by the reader.
-   * @param cardProtocol The name of the protocol as known by the application.
-   * @throws IllegalArgumentException If one of the provided protocol is null or empty.
-   * @throws ReaderProtocolNotSupportedException If the protocol is not supported.
+   * @param readerProtocol The name of the communication protocol as known by the reader. See the
+   *     reader documentation for the list of supported communication protocols.
+   * @param cardProtocol The name of the communication protocol of the card which be detect as
+   *     defined by the application.
+   * @throws IllegalArgumentException If one of the provided communication protocols is null or
+   *     empty.
+   * @throws ReaderProtocolNotSupportedException If the reader communication protocol is not
+   *     supported.
    * @since 1.0.0
    */
   void activateProtocol(String readerProtocol, String cardProtocol);
 
   /**
-   * Deactivates the provided card protocol.
+   * Deactivates the provided reader communication protocol. Inhibits the detection of cards using
+   * this reader communication protocol.
    *
-   * <ul>
-   *   <li>Inhibits the detection of cards using this protocol.
-   *   <li>Ask the reader to ignore this protocol if a card using this protocol is identified during
-   *       the selection phase.
-   * </ul>
-   *
-   * @param readerProtocol The name of the protocol as known by the reader.
-   * @throws IllegalArgumentException If the provided protocol is null or empty.
-   * @throws ReaderProtocolNotSupportedException If the protocol is not supported.
+   * @param readerProtocol The name of the communication protocol as known by the reader. See the
+   *     reader documentation for the list of supported communication protocols.
+   * @throws IllegalArgumentException If the provided reader communication protocol is null or
+   *     empty.
+   * @throws ReaderProtocolNotSupportedException If the reader communication protocol is not
+   *     supported.
    * @since 1.0.0
    */
   void deactivateProtocol(String readerProtocol);
