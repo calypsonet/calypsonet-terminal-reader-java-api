@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="3147.5px" preserveAspectRatio="none" style="width:4697px;height:3147px;background:#FFFFFF;" version="1.1" viewBox="0 0 4697 3147" width="4697.5px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="45" lengthAdjust="spacing" textLength="1340" x="1662.5" y="46.7139">Calypsonet - calypsonet-terminal-reader-java-api - 1.0 (30/07/2021)</text><!--MD5=[a5decc184066de113c6f9732c0892d3a]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="3147.5px" preserveAspectRatio="none" style="width:4697px;height:3147px;background:#FFFFFF;" version="1.1" viewBox="0 0 4697 3147" width="4697.5px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="45" lengthAdjust="spacing" textLength="1380" x="1642.5" y="46.7139">Calypsonet - calypsonet-terminal-reader-java-api - 1.0.+ (30/07/2021)</text><!--MD5=[a5decc184066de113c6f9732c0892d3a]
 cluster readerApi--><polygon fill="#F8F9F9" points="40,159.0516,595,159.0516,612.5,218.075,4655,218.075,4655,3131.5516,40,3131.5516,40,159.0516" style="stroke:#000000;stroke-width:3.75;"/><line style="stroke:#000000;stroke-width:3.75;" x1="40" x2="612.5" y1="218.075" y2="218.075"/><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="540" x="50" y="200.3846">org.calypsonet.terminal.reader</text><!--MD5=[0af762fd8359575df4da93533d6338ab]
 cluster readerSpi--><polygon fill="#F2F3F4" points="2622.5,1764.0516,2690,1764.0516,2707.5,1823.075,4090,1823.075,4090,2134.0516,2622.5,2134.0516,2622.5,1764.0516" style="stroke:#000000;stroke-width:3.75;"/><line style="stroke:#000000;stroke-width:3.75;" x1="2622.5" x2="2707.5" y1="1823.075" y2="1823.075"/><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="52.5" x="2632.5" y="1805.3846">spi</text><!--MD5=[2ef70ab4f822c198fdf53fd79da95100]
 cluster selectionApi--><polygon fill="#F2F3F4" points="100,269.0516,277.5,269.0516,295,328.075,2140,328.075,2140,2194.0516,100,2194.0516,100,269.0516" style="stroke:#000000;stroke-width:3.75;"/><line style="stroke:#000000;stroke-width:3.75;" x1="100" x2="295" y1="328.075" y2="328.075"/><text fill="#000000" font-family="sans-serif" font-size="35" font-weight="bold" lengthAdjust="spacing" textLength="162.5" x="110" y="310.3846">selection</text><!--MD5=[c96d8bee8ec60da1ef6ad554183a6a76]
@@ -43,10 +43,10 @@ link ObservableCardReader to CardReaderObserverSpi--><path codeLine="186" d="M30
 link CardReaderObserverSpi to CardReaderEvent--><path codeLine="188" d="M2914.15,2095.1466 C2890.75,2166.0516 2858.425,2264.1041 2832.975,2341.2991 " fill="none" id="CardReaderObserverSpi-to-CardReaderEvent" style="stroke:#27AE60;stroke-width:2.5;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="2828.95,2353.5016,2845.483,2335.2557,2832.8579,2341.6281,2826.4855,2329.0031,2828.95,2353.5016" style="stroke:#27AE60;stroke-width:2.5;"/><polygon fill="#000000" points="2871.0852,2268.8622,2885.1448,2249.6881,2871.1895,2245.086,2871.0852,2268.8622" style="stroke:#000000;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="32.5" lengthAdjust="spacing" textLength="52.5" x="2897.5" y="2270.2894">use</text><!--MD5=[1eb259ccd641d78a15a582c900274490]
 link SmartCard to ReaderProtocolNotSupportedException--><!--MD5=[21fcee3fe490d347e3ecc9417572c91b]
 link ReaderProtocolNotSupportedException to ReaderCommunicationException--><!--MD5=[a1e51d2b42def1ea2068c5bed5dda84c]
-link ReaderCommunicationException to CardCommunicationException--><!--MD5=[5dcd7958238f10d672d36a100fe7074e]
+link ReaderCommunicationException to CardCommunicationException--><!--MD5=[b7b46037c9b95db6192739c5d07a364d]
 @startuml
 title
-    Calypsonet - calypsonet-terminal-reader-java-api - 1.0 (30/07/2021)
+    Calypsonet - calypsonet-terminal-reader-java-api - 1.0.+ (30/07/2021)
 end title
 
 ' == THEME ==
@@ -251,7 +251,7 @@ package selectionSpi #C_GREY3 {}
 
 @startuml
 title
-    Calypsonet - calypsonet-terminal-reader-java-api - 1.0 (30/07/2021)
+    Calypsonet - calypsonet-terminal-reader-java-api - 1.0.+ (30/07/2021)
 end title
 
 

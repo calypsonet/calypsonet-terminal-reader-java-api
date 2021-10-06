@@ -1,6 +1,6 @@
 @startuml
 title
-    Calypsonet - calypsonet-terminal-reader-java-api - 1.0 (30/07/2021)
+    Calypsonet - calypsonet-terminal-reader-java-api - 1.0.+ (30/07/2021)
 end title
 
 ' == THEME ==
