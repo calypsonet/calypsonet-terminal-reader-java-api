@@ -128,27 +128,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Service dedicated to card selection, based on the preparation of a card selection scenario.
 
  <p>A card selection scenario consists of one or more selection cases based on a <a href="spi/CardSelection.html" title="interface in org.calypsonet.terminal.reader.selection.spi"><code>CardSelection</code></a>.<br>
- A card selection targets a specific card and defines optional commands to be executed after the
- successful selection of the card. <br>
- If a card selection case fails, the service will try with the next selection defined in the
- scenario, if any. <br>
- If a card selection case succeeds, the service will execute the next selection only if the
- multiple selection mode is set (disabled by default).
+ A card selection case targets a specific card. <br>
+ Optionally, additional commands can be defined to be executed after the successful selection of
+ the card. <br>
+
+ <p>If a card selection case fails, the service will try with the next card selection case defined
+ in the scenario, until there are no further card selection cases available.
+
+ <p>If a card selection case succeeds:
+
+ <ul>
+   <li>By default, the service stops at the first successful card selection.
+   <li>If the multiple selection mode is set (disabled by default), the service will execute the
+       next selection. This multiple selection mode force the execution of all card selection
+       cases defined in the scenario. This method can be enabled using the <a href="#setMultipleSelectionMode()"><code>setMultipleSelectionMode()</code></a> method
+ </ul>
+
+ <p>The logical channel established with the card can be left open (default) or closed after card
+ selection (by using the <a href="#prepareReleaseChannel()"><code>prepareReleaseChannel()</code></a> method).
 
  <p>This service allows to:
 
  <ul>
-   <li>prepare the card selection scenario,
-   <li>make an explicit selection of a card (when the card is already present),
-   <li>to schedule the execution of the selection as soon as a card is presented to an observable
+   <li>Prepare the card selection scenario.
+   <li>Make an explicit selection of a card (when the card is already present).
+   <li>Schedule the execution of the selection as soon as a card is presented to an observable
        reader.
- </ul>
-
- <p>By default the selection process stops at the first successful selection. However, it is
- possible to force the execution of all selection cases defined in the scenario using the <a href="#setMultipleSelectionMode()"><code>setMultipleSelectionMode()</code></a> method.
-
- <p>The logical channel established with the card can be left open (default) or closed after
- selection.</div>
+ </ul></div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -178,7 +184,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseScheduledCardSelectionsResponse(org.calypsonet.terminal.reader.selection.ScheduledCardSelectionsResponse)">parseScheduledCardSelectionsResponse</a></span>&#8203;(<a href="ScheduledCardSelectionsResponse.html" title="interface in org.calypsonet.terminal.reader.selection">ScheduledCardSelectionsResponse</a>&nbsp;scheduledCardSelectionsResponse)</code></th>
 <td class="colLast">
 <div class="block">Analyzes the responses provided by a <a href="../CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader"><code>CardReaderEvent</code></a>
- following the insertion of a card and the execution of the selection scenario.</div>
+ following the insertion of a card and the execution of the card selection scenario.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -200,7 +206,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code><a href="CardSelectionResult.html" title="interface in org.calypsonet.terminal.reader.selection">CardSelectionResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processCardSelectionScenario(org.calypsonet.terminal.reader.CardReader)">processCardSelectionScenario</a></span>&#8203;(<a href="../CardReader.html" title="interface in org.calypsonet.terminal.reader">CardReader</a>&nbsp;reader)</code></th>
 <td class="colLast">
-<div class="block">Executes explicitly a previously prepared card selection scenario and returns the card
+<div class="block">Explicitly executes a previously prepared card selection scenario and returns the card
  selection result.</div>
 </td>
 </tr>
@@ -218,7 +224,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMultipleSelectionMode()">setMultipleSelectionMode</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Sets the multiple selection mode to process all selection cases even in case of successful
+<div class="block">Sets the multiple selection mode to process all selection cases even in case of a successful
  selection.</div>
 </td>
 </tr>
@@ -246,7 +252,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>setMultipleSelectionMode</h4>
 <pre class="methodSignature">void&nbsp;setMultipleSelectionMode()</pre>
-<div class="block">Sets the multiple selection mode to process all selection cases even in case of successful
+<div class="block">Sets the multiple selection mode to process all selection cases even in case of a successful
  selection.
 
  <p>The multiple selection mode is disabled by default.</div>
@@ -272,7 +278,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardSelection</code> - The card selection.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A positive int.</dd>
+<dd>A non-negative int.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - If the provided card selection is null.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -305,13 +311,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>processCardSelectionScenario</h4>
 <pre class="methodSignature"><a href="CardSelectionResult.html" title="interface in org.calypsonet.terminal.reader.selection">CardSelectionResult</a>&nbsp;processCardSelectionScenario&#8203;(<a href="../CardReader.html" title="interface in org.calypsonet.terminal.reader">CardReader</a>&nbsp;reader)</pre>
-<div class="block">Executes explicitly a previously prepared card selection scenario and returns the card
+<div class="block">Explicitly executes a previously prepared card selection scenario and returns the card
  selection result.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reader</code> - The reader to communicate with the card.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A not null reference.</dd>
+<dd>A non-null reference.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - If the provided reader is null.</dd>
 <dd><code><a href="../ReaderCommunicationException.html" title="class in org.calypsonet.terminal.reader">ReaderCommunicationException</a></code> - If the communication with the reader has failed.</dd>
@@ -336,8 +342,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Schedules the execution of the prepared card selection scenario as soon as a card is presented
  to the provided <a href="../ObservableCardReader.html" title="interface in org.calypsonet.terminal.reader"><code>ObservableCardReader</code></a>.
 
- <p><a href="../CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader"><code>CardReaderEvent</code></a> are notified to the observer
- according to the specified notification mode.
+ <p><a href="../CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader"><code>CardReaderEvent</code></a> are pushed to the observer according
+ to the specified notification mode.
 
  <p>The reader's behavior at the end of the card processing is defined by the specified <a href="../ObservableCardReader.DetectionMode.html" title="enum in org.calypsonet.terminal.reader"><code>ObservableCardReader.DetectionMode</code></a>.
 
@@ -362,12 +368,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>parseScheduledCardSelectionsResponse</h4>
 <pre class="methodSignature"><a href="CardSelectionResult.html" title="interface in org.calypsonet.terminal.reader.selection">CardSelectionResult</a>&nbsp;parseScheduledCardSelectionsResponse&#8203;(<a href="ScheduledCardSelectionsResponse.html" title="interface in org.calypsonet.terminal.reader.selection">ScheduledCardSelectionsResponse</a>&nbsp;scheduledCardSelectionsResponse)</pre>
 <div class="block">Analyzes the responses provided by a <a href="../CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader"><code>CardReaderEvent</code></a>
- following the insertion of a card and the execution of the selection scenario.</div>
+ following the insertion of a card and the execution of the card selection scenario.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>scheduledCardSelectionsResponse</code> - The card selection scenario execution response.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A not null reference.</dd>
+<dd>A non-null reference.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - If the provided card selection response is null.</dd>
 <dd><code><a href="InvalidCardResponseException.html" title="class in org.calypsonet.terminal.reader.selection">InvalidCardResponseException</a></code> - If the data returned by the card could not be interpreted.</dd>

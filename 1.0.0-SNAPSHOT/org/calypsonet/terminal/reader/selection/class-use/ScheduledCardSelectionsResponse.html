@@ -140,8 +140,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code><a href="../ScheduledCardSelectionsResponse.html" title="interface in org.calypsonet.terminal.reader.selection">ScheduledCardSelectionsResponse</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">CardReaderEvent.</span><code><span class="memberNameLink"><a href="../../CardReaderEvent.html#getScheduledCardSelectionsResponse()">getScheduledCardSelectionsResponse</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the card selection responses that may be present when the event is <a href="../../CardReaderEvent.Type.html#CARD_INSERTED"><code>CardReaderEvent.Type.CARD_INSERTED</code></a>, always present when the event is <a href="../../CardReaderEvent.Type.html#CARD_MATCHED"><code>CardReaderEvent.Type.CARD_MATCHED</code></a> and null in the
- others cases.</div>
+<div class="block">Returns the card selection responses when it is available and null in all other cases.</div>
 </td>
 </tr>
 </tbody>
@@ -166,7 +165,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">CardSelectionManager.</span><code><span class="memberNameLink"><a href="../CardSelectionManager.html#parseScheduledCardSelectionsResponse(org.calypsonet.terminal.reader.selection.ScheduledCardSelectionsResponse)">parseScheduledCardSelectionsResponse</a></span>&#8203;(<a href="../ScheduledCardSelectionsResponse.html" title="interface in org.calypsonet.terminal.reader.selection">ScheduledCardSelectionsResponse</a>&nbsp;scheduledCardSelectionsResponse)</code></th>
 <td class="colLast">
 <div class="block">Analyzes the responses provided by a <a href="../../CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader"><code>CardReaderEvent</code></a>
- following the insertion of a card and the execution of the selection scenario.</div>
+ following the insertion of a card and the execution of the card selection scenario.</div>
 </td>
 </tr>
 </tbody>

@@ -128,7 +128,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Card event data container indicating a change of state.
 
  <p>Contains the event origin (reader name), the event type and possibly the card selection
- response in the case of <a href="CardReaderEvent.Type.html#CARD_INSERTED"><code>CardReaderEvent.Type.CARD_INSERTED</code></a> or <a href="CardReaderEvent.Type.html#CARD_MATCHED"><code>CardReaderEvent.Type.CARD_MATCHED</code></a> events.</div>
+ response (when available).</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -182,22 +182,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReaderName()">getReaderName</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the name of the reader that generated the event.</div>
+<div class="block">Returns the name of the reader that generated the event.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="selection/ScheduledCardSelectionsResponse.html" title="interface in org.calypsonet.terminal.reader.selection">ScheduledCardSelectionsResponse</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getScheduledCardSelectionsResponse()">getScheduledCardSelectionsResponse</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the card selection responses that may be present when the event is <a href="CardReaderEvent.Type.html#CARD_INSERTED"><code>CardReaderEvent.Type.CARD_INSERTED</code></a>, always present when the event is <a href="CardReaderEvent.Type.html#CARD_MATCHED"><code>CardReaderEvent.Type.CARD_MATCHED</code></a> and null in the
- others cases.</div>
+<div class="block">Returns the card selection responses when it is available and null in all other cases.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="CardReaderEvent.Type.html" title="enum in org.calypsonet.terminal.reader">CardReaderEvent.Type</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the reader event type.</div>
+<div class="block">Returns the card reader event type.</div>
 </td>
 </tr>
 </table>
@@ -224,10 +223,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>getReaderName</h4>
 <pre class="methodSignature">java.lang.String&nbsp;getReaderName()</pre>
-<div class="block">Gets the name of the reader that generated the event.</div>
+<div class="block">Returns the name of the reader that generated the event.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A not empty string.</dd>
+<dd>A non-empty string.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
 </dl>
@@ -240,10 +239,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>getType</h4>
 <pre class="methodSignature"><a href="CardReaderEvent.Type.html" title="enum in org.calypsonet.terminal.reader">CardReaderEvent.Type</a>&nbsp;getType()</pre>
-<div class="block">Gets the reader event type.</div>
+<div class="block">Returns the card reader event type.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A not null value.</dd>
+<dd>A non-null value.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
 </dl>
@@ -256,8 +255,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>getScheduledCardSelectionsResponse</h4>
 <pre class="methodSignature"><a href="selection/ScheduledCardSelectionsResponse.html" title="interface in org.calypsonet.terminal.reader.selection">ScheduledCardSelectionsResponse</a>&nbsp;getScheduledCardSelectionsResponse()</pre>
-<div class="block">Gets the card selection responses that may be present when the event is <a href="CardReaderEvent.Type.html#CARD_INSERTED"><code>CardReaderEvent.Type.CARD_INSERTED</code></a>, always present when the event is <a href="CardReaderEvent.Type.html#CARD_MATCHED"><code>CardReaderEvent.Type.CARD_MATCHED</code></a> and null in the
- others cases.
+<div class="block">Returns the card selection responses when it is available and null in all other cases. It may
+ be available when the event type is <a href="CardReaderEvent.Type.html#CARD_INSERTED"><code>CardReaderEvent.Type.CARD_INSERTED</code></a> and always present when the
+ event type is <a href="CardReaderEvent.Type.html#CARD_MATCHED"><code>CardReaderEvent.Type.CARD_MATCHED</code></a>.
 
  <p>It is necessary to use the method <a href="selection/CardSelectionManager.html#parseScheduledCardSelectionsResponse(org.calypsonet.terminal.reader.selection.ScheduledCardSelectionsResponse)"><code>CardSelectionManager.parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)</code></a>
  to analyze the result.</div>

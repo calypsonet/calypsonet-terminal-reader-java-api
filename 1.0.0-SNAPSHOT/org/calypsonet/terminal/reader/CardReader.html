@@ -158,21 +158,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the name of the reader.</div>
+<div class="block">Returns the name of the reader.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isCardPresent()">isCardPresent</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Checks if is the card present.</div>
+<div class="block">Checks if the card is present.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isContactless()">isContactless</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Tells if the card communication mode is contactless.</div>
+<div class="block">Checks if the card communication mode is contactless.</div>
 </td>
 </tr>
 </table>
@@ -199,10 +199,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>getName</h4>
 <pre class="methodSignature">java.lang.String&nbsp;getName()</pre>
-<div class="block">Gets the name of the reader.</div>
+<div class="block">Returns the name of the reader.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A not empty string.</dd>
+<dd>A non-empty string containing the name of the reader.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
 </dl>
@@ -215,10 +215,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>isContactless</h4>
 <pre class="methodSignature">boolean&nbsp;isContactless()</pre>
-<div class="block">Tells if the card communication mode is contactless.</div>
+<div class="block">Checks if the card communication mode is contactless.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if the communication is contactless.</dd>
+<dd><b>true</b> if the communication mode is contactless else <b>false</b>.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
 </dl>
@@ -231,10 +231,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>isCardPresent</h4>
 <pre class="methodSignature">boolean&nbsp;isCardPresent()</pre>
-<div class="block">Checks if is the card present.</div>
+<div class="block">Checks if the card is present.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if a card is inserted in the reader.</dd>
+<dd><b>true</b> if a card is inserted in the reader else <b>false</b>.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="ReaderCommunicationException.html" title="class in org.calypsonet.terminal.reader">ReaderCommunicationException</a></code> - If the communication with the reader has failed.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>

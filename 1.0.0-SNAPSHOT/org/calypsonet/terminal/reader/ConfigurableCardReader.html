@@ -130,7 +130,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public interface <span class="typeNameLabel">ConfigurableCardReader</span>
 extends <a href="CardReader.html" title="interface in org.calypsonet.terminal.reader">CardReader</a></pre>
-<div class="block">Configurable Card reader driving the underlying hardware to manage the card detection.</div>
+<div class="block">Configurable card reader providing the methods to manage the card protocols.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -160,15 +160,15 @@ extends <a href="CardReader.html" title="interface in org.calypsonet.terminal.re
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#activateProtocol(java.lang.String,java.lang.String)">activateProtocol</a></span>&#8203;(java.lang.String&nbsp;readerProtocol,
                 java.lang.String&nbsp;cardProtocol)</code></th>
 <td class="colLast">
-<div class="block">Activates the reader protocol having the provided reader protocol name and associates it with
- the protocol name defined by the application.</div>
+<div class="block">Activates the reader communication protocol by associating the provided reader communication
+ protocol name and the communication protocol name defined by the application.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deactivateProtocol(java.lang.String)">deactivateProtocol</a></span>&#8203;(java.lang.String&nbsp;readerProtocol)</code></th>
 <td class="colLast">
-<div class="block">Deactivates the provided card protocol.</div>
+<div class="block">Deactivates the provided reader communication protocol.</div>
 </td>
 </tr>
 </table>
@@ -203,26 +203,29 @@ extends <a href="CardReader.html" title="interface in org.calypsonet.terminal.re
 <h4>activateProtocol</h4>
 <pre class="methodSignature">void&nbsp;activateProtocol&#8203;(java.lang.String&nbsp;readerProtocol,
                       java.lang.String&nbsp;cardProtocol)</pre>
-<div class="block">Activates the reader protocol having the provided reader protocol name and associates it with
- the protocol name defined by the application.
+<div class="block">Activates the reader communication protocol by associating the provided reader communication
+ protocol name and the communication protocol name defined by the application.
 
  <ul>
-   <li>Activates the detection of cards using the provided reader protocol.
-   <li>Asks the reader to accept any card using this protocol during the selection phase.
+   <li>Activates the detection of cards using the provided reader communication protocol.
    <li>Internally associates the two strings provided as arguments.
  </ul>
 
- <p>The association between the protocol name known by the reader and the protocol name known by
- the application is intended to allow a unique protocol name to be set when constructing a card
- selector as defined by the <b>Terminal Card API</b> regardless of the type of reader that will
- be used.</div>
+ <p>The association between the communication protocol name known by the reader and the
+ communication protocol name defined by the application is intended to manage non-ISO cards. It
+ allows a unique protocol name to be set when constructing a card selector as defined by the
+ <b>Terminal Card API</b> regardless of the type of reader that will be used.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>readerProtocol</code> - The name of the protocol as known by the reader.</dd>
-<dd><code>cardProtocol</code> - The name of the protocol as known by the application.</dd>
+<dd><code>readerProtocol</code> - The name of the communication protocol as known by the reader. See the
+     reader documentation for the list of supported communication protocols.</dd>
+<dd><code>cardProtocol</code> - The name of the communication protocol of the card which be detect as
+     defined by the application.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - If one of the provided protocol is null or empty.</dd>
-<dd><code><a href="ReaderProtocolNotSupportedException.html" title="class in org.calypsonet.terminal.reader">ReaderProtocolNotSupportedException</a></code> - If the protocol is not supported.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If one of the provided communication protocols is null or
+     empty.</dd>
+<dd><code><a href="ReaderProtocolNotSupportedException.html" title="class in org.calypsonet.terminal.reader">ReaderProtocolNotSupportedException</a></code> - If the reader communication protocol is not
+     supported.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
 </dl>
@@ -235,19 +238,17 @@ extends <a href="CardReader.html" title="interface in org.calypsonet.terminal.re
 <li class="blockList">
 <h4>deactivateProtocol</h4>
 <pre class="methodSignature">void&nbsp;deactivateProtocol&#8203;(java.lang.String&nbsp;readerProtocol)</pre>
-<div class="block">Deactivates the provided card protocol.
-
- <ul>
-   <li>Inhibits the detection of cards using this protocol.
-   <li>Ask the reader to ignore this protocol if a card using this protocol is identified during
-       the selection phase.
- </ul></div>
+<div class="block">Deactivates the provided reader communication protocol. Inhibits the detection of cards using
+ this reader communication protocol.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>readerProtocol</code> - The name of the protocol as known by the reader.</dd>
+<dd><code>readerProtocol</code> - The name of the communication protocol as known by the reader. See the
+     reader documentation for the list of supported communication protocols.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - If the provided protocol is null or empty.</dd>
-<dd><code><a href="ReaderProtocolNotSupportedException.html" title="class in org.calypsonet.terminal.reader">ReaderProtocolNotSupportedException</a></code> - If the protocol is not supported.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the provided reader communication protocol is null or
+     empty.</dd>
+<dd><code><a href="ReaderProtocolNotSupportedException.html" title="class in org.calypsonet.terminal.reader">ReaderProtocolNotSupportedException</a></code> - If the reader communication protocol is not
+     supported.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
 </dl>

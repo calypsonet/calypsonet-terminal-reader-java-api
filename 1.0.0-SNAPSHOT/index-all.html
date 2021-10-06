@@ -100,8 +100,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/ConfigurableCardReader.html#activateProtocol(java.lang.String,java.lang.String)">activateProtocol(String, String)</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/ConfigurableCardReader.html" title="interface in org.calypsonet.terminal.reader">ConfigurableCardReader</a></dt>
 <dd>
-<div class="block">Activates the reader protocol having the provided reader protocol name and associates it with
- the protocol name defined by the application.</div>
+<div class="block">Activates the reader communication protocol by associating the provided reader communication
+ protocol name and the communication protocol name defined by the application.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/ObservableCardReader.html#addObserver(org.calypsonet.terminal.reader.spi.CardReaderObserverSpi)">addObserver(CardReaderObserverSpi)</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/ObservableCardReader.html" title="interface in org.calypsonet.terminal.reader">ObservableCardReader</a></dt>
 <dd>
@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/CardReaderEvent.Type.html#CARD_MATCHED">CARD_MATCHED</a></span> - org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/CardReaderEvent.Type.html" title="enum in org.calypsonet.terminal.reader">CardReaderEvent.Type</a></dt>
 <dd>
-<div class="block">A card has been inserted and matched the selection.</div>
+<div class="block">A card has been inserted that matches the selection.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/CardReaderEvent.Type.html#CARD_REMOVED">CARD_REMOVED</a></span> - org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/CardReaderEvent.Type.html" title="enum in org.calypsonet.terminal.reader">CardReaderEvent.Type</a></dt>
 <dd>
@@ -177,7 +177,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="org/calypsonet/terminal/reader/ConfigurableCardReader.html" title="interface in org.calypsonet.terminal.reader"><span class="typeNameLink">ConfigurableCardReader</span></a> - Interface in <a href="org/calypsonet/terminal/reader/package-summary.html">org.calypsonet.terminal.reader</a></dt>
 <dd>
-<div class="block">Configurable Card reader driving the underlying hardware to manage the card detection.</div>
+<div class="block">Configurable card reader providing the methods to manage the card protocols.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/ObservableCardReader.html#countObservers()">countObservers()</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/ObservableCardReader.html" title="interface in org.calypsonet.terminal.reader">ObservableCardReader</a></dt>
 <dd>
@@ -191,7 +191,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/ConfigurableCardReader.html#deactivateProtocol(java.lang.String)">deactivateProtocol(String)</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/ConfigurableCardReader.html" title="interface in org.calypsonet.terminal.reader">ConfigurableCardReader</a></dt>
 <dd>
-<div class="block">Deactivates the provided card protocol.</div>
+<div class="block">Deactivates the provided reader communication protocol.</div>
 </dd>
 </dl>
 <a id="I:F">
@@ -219,7 +219,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/CardReader.html#getName()">getName()</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/CardReader.html" title="interface in org.calypsonet.terminal.reader">CardReader</a></dt>
 <dd>
-<div class="block">Gets the name of the reader.</div>
+<div class="block">Returns the name of the reader.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/selection/spi/SmartCard.html#getPowerOnData()">getPowerOnData()</a></span> - Method in interface org.calypsonet.terminal.reader.selection.spi.<a href="org/calypsonet/terminal/reader/selection/spi/SmartCard.html" title="interface in org.calypsonet.terminal.reader.selection.spi">SmartCard</a></dt>
 <dd>
@@ -227,12 +227,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/CardReaderEvent.html#getReaderName()">getReaderName()</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader">CardReaderEvent</a></dt>
 <dd>
-<div class="block">Gets the name of the reader that generated the event.</div>
+<div class="block">Returns the name of the reader that generated the event.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/CardReaderEvent.html#getScheduledCardSelectionsResponse()">getScheduledCardSelectionsResponse()</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader">CardReaderEvent</a></dt>
 <dd>
-<div class="block">Gets the card selection responses that may be present when the event is <a href="org/calypsonet/terminal/reader/CardReaderEvent.Type.html#CARD_INSERTED"><code>CardReaderEvent.Type.CARD_INSERTED</code></a>, always present when the event is <a href="org/calypsonet/terminal/reader/CardReaderEvent.Type.html#CARD_MATCHED"><code>CardReaderEvent.Type.CARD_MATCHED</code></a> and null in the
- others cases.</div>
+<div class="block">Returns the card selection responses when it is available and null in all other cases.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/selection/spi/SmartCard.html#getSelectApplicationResponse()">getSelectApplicationResponse()</a></span> - Method in interface org.calypsonet.terminal.reader.selection.spi.<a href="org/calypsonet/terminal/reader/selection/spi/SmartCard.html" title="interface in org.calypsonet.terminal.reader.selection.spi">SmartCard</a></dt>
 <dd>
@@ -246,7 +245,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/CardReaderEvent.html#getType()">getType()</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader">CardReaderEvent</a></dt>
 <dd>
-<div class="block">Gets the reader event type.</div>
+<div class="block">Returns the card reader event type.</div>
 </dd>
 </dl>
 <a id="I:I">
@@ -264,11 +263,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/CardReader.html#isCardPresent()">isCardPresent()</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/CardReader.html" title="interface in org.calypsonet.terminal.reader">CardReader</a></dt>
 <dd>
-<div class="block">Checks if is the card present.</div>
+<div class="block">Checks if the card is present.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/CardReader.html#isContactless()">isContactless()</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/CardReader.html" title="interface in org.calypsonet.terminal.reader">CardReader</a></dt>
 <dd>
-<div class="block">Tells if the card communication mode is contactless.</div>
+<div class="block">Checks if the card communication mode is contactless.</div>
 </dd>
 </dl>
 <a id="I:M">
@@ -331,7 +330,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/selection/CardSelectionManager.html#parseScheduledCardSelectionsResponse(org.calypsonet.terminal.reader.selection.ScheduledCardSelectionsResponse)">parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)</a></span> - Method in interface org.calypsonet.terminal.reader.selection.<a href="org/calypsonet/terminal/reader/selection/CardSelectionManager.html" title="interface in org.calypsonet.terminal.reader.selection">CardSelectionManager</a></dt>
 <dd>
 <div class="block">Analyzes the responses provided by a <a href="org/calypsonet/terminal/reader/CardReaderEvent.html" title="interface in org.calypsonet.terminal.reader"><code>CardReaderEvent</code></a>
- following the insertion of a card and the execution of the selection scenario.</div>
+ following the insertion of a card and the execution of the card selection scenario.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/selection/CardSelectionManager.html#prepareReleaseChannel()">prepareReleaseChannel()</a></span> - Method in interface org.calypsonet.terminal.reader.selection.<a href="org/calypsonet/terminal/reader/selection/CardSelectionManager.html" title="interface in org.calypsonet.terminal.reader.selection">CardSelectionManager</a></dt>
 <dd>
@@ -344,7 +343,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/selection/CardSelectionManager.html#processCardSelectionScenario(org.calypsonet.terminal.reader.CardReader)">processCardSelectionScenario(CardReader)</a></span> - Method in interface org.calypsonet.terminal.reader.selection.<a href="org/calypsonet/terminal/reader/selection/CardSelectionManager.html" title="interface in org.calypsonet.terminal.reader.selection">CardSelectionManager</a></dt>
 <dd>
-<div class="block">Executes explicitly a previously prepared card selection scenario and returns the card
+<div class="block">Explicitly executes a previously prepared card selection scenario and returns the card
  selection result.</div>
 </dd>
 </dl>
@@ -396,7 +395,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/selection/CardSelectionManager.html#setMultipleSelectionMode()">setMultipleSelectionMode()</a></span> - Method in interface org.calypsonet.terminal.reader.selection.<a href="org/calypsonet/terminal/reader/selection/CardSelectionManager.html" title="interface in org.calypsonet.terminal.reader.selection">CardSelectionManager</a></dt>
 <dd>
-<div class="block">Sets the multiple selection mode to process all selection cases even in case of successful
+<div class="block">Sets the multiple selection mode to process all selection cases even in case of a successful
  selection.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/calypsonet/terminal/reader/ObservableCardReader.html#setReaderObservationExceptionHandler(org.calypsonet.terminal.reader.spi.CardReaderObservationExceptionHandlerSpi)">setReaderObservationExceptionHandler(CardReaderObservationExceptionHandlerSpi)</a></span> - Method in interface org.calypsonet.terminal.reader.<a href="org/calypsonet/terminal/reader/ObservableCardReader.html" title="interface in org.calypsonet.terminal.reader">ObservableCardReader</a></dt>
