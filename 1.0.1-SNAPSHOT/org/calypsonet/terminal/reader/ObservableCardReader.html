@@ -212,7 +212,8 @@ extends <a href="CardReader.html" title="interface in org.calypsonet.terminal.re
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#finalizeCardProcessing()">finalizeCardProcessing</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Terminates the card processing.</div>
+<div class="block">Notifies the observation process that the processing of the card has been completed in order to
+ ensure that the card monitoring cycle runs properly.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -402,16 +403,19 @@ extends <a href="CardReader.html" title="interface in org.calypsonet.terminal.re
 <li class="blockList">
 <h4>finalizeCardProcessing</h4>
 <pre class="methodSignature">void&nbsp;finalizeCardProcessing()</pre>
-<div class="block">Terminates the card processing.
+<div class="block">Notifies the observation process that the processing of the card has been completed in order to
+ ensure that the card monitoring cycle runs properly.
 
- <p>This method notifies the observation process that the processing of the card has been
- completed in order to ensure that the card monitoring cycle runs properly.<br>
- It is <b>mandatory</b> to invoke it when the physical communication channel with the card could
- not be closed. <br>
- This method will do nothing if the channel has already been closed.<br>
+ <p>This method has no effect if the physical communication channel has already been closed.
+
+ <p>It is <b>mandatory</b> to invoke this method when the physical communication channel with
+ the card could not be closed properly.<br>
  The channel closing is nominally managed during the last transmission with the card. However,
  there are cases where exchanges with the card are interrupted (e.g. by an exception), in which
- case it is necessary to explicitly close the channel using this method.</div>
+ case it is necessary to explicitly close the channel using this method.
+
+ <p>In practice, it is recommended to invoke this method in all cases (e.g. in a "finally"
+ statement) at the end of a card processing whatever the result.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
