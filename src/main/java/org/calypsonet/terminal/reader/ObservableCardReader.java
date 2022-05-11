@@ -93,16 +93,19 @@ public interface ObservableCardReader extends CardReader {
   void stopCardDetection();
 
   /**
-   * Terminates the card processing.
+   * Notifies the observation process that the processing of the card has been completed in order to
+   * ensure that the card monitoring cycle runs properly.
    *
-   * <p>This method notifies the observation process that the processing of the card has been
-   * completed in order to ensure that the card monitoring cycle runs properly.<br>
-   * It is <b>mandatory</b> to invoke it when the physical communication channel with the card could
-   * not be closed. <br>
-   * This method will do nothing if the channel has already been closed.<br>
+   * <p>This method has no effect if the physical communication channel has already been closed.
+   *
+   * <p>It is <b>mandatory</b> to invoke this method when the physical communication channel with
+   * the card could not be closed properly.<br>
    * The channel closing is nominally managed during the last transmission with the card. However,
    * there are cases where exchanges with the card are interrupted (e.g. by an exception), in which
    * case it is necessary to explicitly close the channel using this method.
+   *
+   * <p>In practice, it is recommended to invoke this method in all cases (e.g. in a "finally"
+   * statement) at the end of a card processing whatever the result.
    *
    * @since 1.0.0
    */
