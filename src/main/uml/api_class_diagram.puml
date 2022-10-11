@@ -1,6 +1,6 @@
 @startuml
 title
-    Calypsonet - calypsonet-terminal-reader-java-api - 1.0.+ (30/07/2021)
+    Calypsonet - calypsonet-terminal-reader-java-api - 1.1.+ (05/10/2022)
 end title
 
 ' == THEME ==
@@ -15,13 +15,19 @@ end title
 !define C_LINK 3498DB
 !define C_USE 27AE60
 
-skinparam Shadowing false
-skinparam ClassFontStyle italic
-skinparam ClassBorderColor #D4AC0D
+' -- Styles that don't work with new version of plantuml --
 skinparam stereotypeABorderColor #A9DCDF
 skinparam stereotypeIBorderColor #B4A7E5
 skinparam stereotypeCBorderColor #ADD1B2
 skinparam stereotypeEBorderColor #EB93DF
+' -- END --
+
+skinparam ClassBorderThickness 2
+skinparam ArrowThickness 2
+
+' Yellow
+skinparam ClassBackgroundColor #FEFECE
+skinparam ClassBorderColor #D4AC0D
 ' Red
 skinparam ClassBackgroundColor<<red>> #FDEDEC
 skinparam ClassBorderColor<<red>> #E74C3C
@@ -61,8 +67,7 @@ package "org.calypsonet.terminal.reader" as readerApi {
             +void deactivateProtocol (String readerProtocol)
         }
         +interface ObservableCardReader extends CardReader {
-            +void setReaderObservationExceptionHandler (
-                \tCardReaderObservationExceptionHandlerSpi exceptionHandler)
+            +void setReaderObservationExceptionHandler (CardReaderObservationExceptionHandlerSpi exceptionHandler)
 
             +void addObserver (CardReaderObserverSpi observer)
             +void removeObserver (CardReaderObserverSpi observer)
@@ -95,12 +100,10 @@ package "org.calypsonet.terminal.reader" as readerApi {
         ' SPI
         package "spi" as readerSpi {
             +interface CardReaderObserverSpi {
-                +void onReaderEvent (
-                    \tCardReaderEvent cardReaderEvent)
+                +void onReaderEvent (CardReaderEvent cardReaderEvent)
             }
             +interface CardReaderObservationExceptionHandlerSpi {
-                +void onReaderObservationError (String contextInfo,
-                    \tString readerName, Throwable e)
+                +void onReaderObservationError (String contextInfo, String readerName, Throwable e)
             }
         }
     }
@@ -114,12 +117,13 @@ package "org.calypsonet.terminal.reader" as readerApi {
             +int prepareSelection (CardSelection cardSelection)
             +void prepareReleaseChannel ()
 
+            +String exportCardSelectionScenario ()
+            +int importCardSelectionScenario (String cardSelectionScenario)
+
             +CardSelectionResult processCardSelectionScenario (CardReader cardReader)
 
-            +void scheduleCardSelectionScenario (ObservableCardReader observableCardReader,
-                \tDetectionMode detectionMode, NotificationMode notificationMode)
-            +CardSelectionResult parseScheduledCardSelectionsResponse (
-                \tScheduledCardSelectionsResponse scheduledCardSelectionsResponse)
+            +void scheduleCardSelectionScenario (ObservableCardReader observableCardReader, DetectionMode detectionMode, NotificationMode notificationMode)
+            +CardSelectionResult parseScheduledCardSelectionsResponse (ScheduledCardSelectionsResponse scheduledCardSelectionsResponse)
         }
 
         ' Card Extension SPI
@@ -141,24 +145,21 @@ package "org.calypsonet.terminal.reader" as readerApi {
 
         +class "<<RuntimeException>>\nInvalidCardResponseException" as InvalidCardResponseException {
             +InvalidCardResponseException (String message)
-            +InvalidCardResponseException (String message,
-                \tThrowable cause)
+            +InvalidCardResponseException (String message, Throwable cause)
         }
     }
     ' EXCEPTIONS
     'together {
         +class "<<RuntimeException>>\nReaderCommunicationException" as ReaderCommunicationException {
             +ReaderCommunicationException (String message)
-            +ReaderCommunicationException (String message,
-                \tThrowable cause)
+            +ReaderCommunicationException (String message, Throwable cause)
         }
         +class "<<RuntimeException>>\nReaderProtocolNotSupportedException" as ReaderProtocolNotSupportedException {
             +ReaderProtocolNotSupportedException (String cardProtocol)
         }
         +class "<<RuntimeException>>\nCardCommunicationException" as CardCommunicationException {
             +CardCommunicationException (String message)
-            +CardCommunicationException (String message,
-                \tThrowable cause)
+            +CardCommunicationException (String message, Throwable cause)
         }
     '}
 }
@@ -182,7 +183,7 @@ CardSelectionManager ..> CardSelectionResult #C_LINK : provide >
 CardSelectionManager .right.> CardReader #C_USE : use >
 CardSelectionManager ..> NotificationMode #C_USE : use >
 CardSelectionManager ..> DetectionMode #C_USE : use >
-CardSelectionManager .left.> InvalidCardResponseException #C_LINK : throw >
+CardSelectionManager ..> InvalidCardResponseException #C_LINK : throw >
 
 ObservableCardReader ..> CardReaderObserverSpi #C_USE : use >
 

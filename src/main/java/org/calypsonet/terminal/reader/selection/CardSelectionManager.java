@@ -91,6 +91,32 @@ public interface CardSelectionManager {
   void prepareReleaseChannel();
 
   /**
+   * Exports the current prepared card selection scenario to a string in JSON format.
+   *
+   * <p>This string can be imported into the same or another card selection manager via the method
+   * {@link #importCardSelectionScenario(String)}.
+   *
+   * @return A not null JSON string.
+   * @see #importCardSelectionScenario(String)
+   * @since 1.1.0
+   */
+  String exportCardSelectionScenario();
+
+  /**
+   * Imports a card selection scenario provided as a string in JSON format.
+   *
+   * <p>The string must have been exported from a card selection manager via the method {@link
+   * #exportCardSelectionScenario()}.
+   *
+   * @param cardSelectionScenario The string in JSON format containing the card selection scenario.
+   * @return The index of the last imported selection in the card selection scenario.
+   * @throws IllegalArgumentException If the string is null or malformed.
+   * @see #exportCardSelectionScenario()
+   * @since 1.1.0
+   */
+  int importCardSelectionScenario(String cardSelectionScenario);
+
+  /**
    * Explicitly executes a previously prepared card selection scenario and returns the card
    * selection result.
    *
@@ -120,8 +146,8 @@ public interface CardSelectionManager {
    * #parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}.
    *
    * @param observableCardReader The reader with which the card communication is carried out.
-   * @param detectionMode The card detection mode.
-   * @param notificationMode The card notification mode.
+   * @param detectionMode The card detection mode to use when searching for a card.
+   * @param notificationMode The card notification mode to use when a card is detected.
    * @throws IllegalArgumentException If one of the parameters is null.
    * @since 1.0.0
    */
