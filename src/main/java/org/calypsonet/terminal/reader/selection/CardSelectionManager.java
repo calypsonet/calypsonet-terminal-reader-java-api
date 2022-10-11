@@ -91,6 +91,41 @@ public interface CardSelectionManager {
   void prepareReleaseChannel();
 
   /**
+   * Exports the current prepared card selection scenario to a string in JSON format.
+   *
+   * <p>This string can be imported into the same or another card selection manager via the method
+   * {@link #importCardSelectionScenario(String)}.
+   *
+   * @param detectionMode The card detection mode to use when searching for a card.
+   * @param notificationMode The card notification mode to use when a card is detected.
+   * @return A not null JSON string.
+   * @see #importCardSelectionScenario(String)
+   * @since 1.1.0
+   */
+  String exportCardSelectionScenario(
+      ObservableCardReader.DetectionMode detectionMode,
+      ObservableCardReader.NotificationMode notificationMode);
+
+  /**
+   * Imports a card selection scenario provided as a string in JSON format.
+   *
+   * <p>The string must have been exported from a card selection manager via the method {@link
+   * #exportCardSelectionScenario(ObservableCardReader.DetectionMode,
+   * ObservableCardReader.NotificationMode)}.
+   *
+   * <p>The included card detection and notification modes will be used during the scheduling
+   * process if they are not overridden.
+   *
+   * @param cardSelectionScenario The string in JSON format containing the card selection scenario.
+   * @return The index of the last imported selection in the card selection scenario.
+   * @throws IllegalArgumentException If the string is null or malformed.
+   * @see #exportCardSelectionScenario(ObservableCardReader.DetectionMode,
+   *     ObservableCardReader.NotificationMode)
+   * @since 1.1.0
+   */
+  int importCardSelectionScenario(String cardSelectionScenario);
+
+  /**
    * Explicitly executes a previously prepared card selection scenario and returns the card
    * selection result.
    *
@@ -120,8 +155,8 @@ public interface CardSelectionManager {
    * #parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)}.
    *
    * @param observableCardReader The reader with which the card communication is carried out.
-   * @param detectionMode The card detection mode.
-   * @param notificationMode The card notification mode.
+   * @param detectionMode The card detection mode to use when searching for a card.
+   * @param notificationMode The card notification mode to use when a card is detected.
    * @throws IllegalArgumentException If one of the parameters is null.
    * @since 1.0.0
    */
@@ -129,6 +164,21 @@ public interface CardSelectionManager {
       ObservableCardReader observableCardReader,
       ObservableCardReader.DetectionMode detectionMode,
       ObservableCardReader.NotificationMode notificationMode);
+
+  /**
+   * Invokes the method {@link #scheduleCardSelectionScenario(ObservableCardReader,
+   * ObservableCardReader.DetectionMode, ObservableCardReader.NotificationMode)} using the current
+   * detection and notification modes.
+   *
+   * <p>If the preparation of the card selection scenario was done locally, without being imported,
+   * then the default values used are {@link ObservableCardReader.DetectionMode#REPEATING} and
+   * {@link ObservableCardReader.NotificationMode#ALWAYS}.
+   *
+   * @param observableCardReader The reader with which the card communication is carried out.
+   * @throws IllegalArgumentException If the observable card reader is null.
+   * @since 1.1.0
+   */
+  void scheduleCardSelectionScenario(ObservableCardReader observableCardReader);
 
   /**
    * Analyzes the responses provided by a {@link org.calypsonet.terminal.reader.CardReaderEvent}
