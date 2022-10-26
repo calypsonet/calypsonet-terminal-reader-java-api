@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1361px" preserveAspectRatio="none" style="width:2832px;height:1361px;background:#FFFFFF;" version="1.1" viewBox="0 0 2832 1361" width="2832px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="25.6406" id="_title" style="stroke:none;stroke-width:1.0;" width="482" x="1168" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="472" x="1173" y="22.6738">Calypsonet - calypsonet-terminal-reader-java-api - 1.1.+ (05/10/2022)</text><!--MD5=[a5decc184066de113c6f9732c0892d3a]
+cluster readerApi--><g id="cluster_readerApi"><path d="M8.5,127.5406 L225.5,127.5406 A3.75,3.75 0 0 1 228,130.0406 L235,149.1813 L2822.5,149.1813 A2.5,2.5 0 0 1 2825,151.6813 L2825,1352.0406 A2.5,2.5 0 0 1 2822.5,1354.5406 L8.5,1354.5406 A2.5,2.5 0 0 1 6,1352.0406 L6,130.0406 A2.5,2.5 0 0 1 8.5,127.5406 " fill="#F8F9F9" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="235" y1="149.1813" y2="149.1813"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="216" x="10" y="142.2145">org.calypsonet.terminal.reader</text></g><!--MD5=[0af762fd8359575df4da93533d6338ab]
+cluster readerSpi--><g id="cluster_readerSpi"><path d="M1554.5,807.0406 L1576.5,807.0406 A3.75,3.75 0 0 1 1579,809.5406 L1586,828.6813 L2578.5,828.6813 A2.5,2.5 0 0 1 2581,831.1813 L2581,936.5406 A2.5,2.5 0 0 1 2578.5,939.0406 L1554.5,939.0406 A2.5,2.5 0 0 1 1552,936.5406 L1552,809.5406 A2.5,2.5 0 0 1 1554.5,807.0406 " fill="#F2F3F4" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="1552" x2="1586" y1="828.6813" y2="828.6813"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="21" x="1556" y="821.7145">spi</text></g><!--MD5=[2ef70ab4f822c198fdf53fd79da95100]
+cluster selectionApi--><g id="cluster_selectionApi"><path d="M32.5,169.5406 L98.5,169.5406 A3.75,3.75 0 0 1 101,172.0406 L108,191.1813 L1257.5,191.1813 A2.5,2.5 0 0 1 1260,193.6813 L1260,968.0406 A2.5,2.5 0 0 1 1257.5,970.5406 L32.5,970.5406 A2.5,2.5 0 0 1 30,968.0406 L30,172.0406 A2.5,2.5 0 0 1 32.5,169.5406 " fill="#F2F3F4" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="30" x2="108" y1="191.1813" y2="191.1813"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="65" x="34" y="184.2145">selection</text></g><!--MD5=[c96d8bee8ec60da1ef6ad554183a6a76]
+cluster selectionSpi--><g id="cluster_selectionSpi"><path d="M56.5,799.5406 L78.5,799.5406 A3.75,3.75 0 0 1 81,802.0406 L88,821.1813 L522.5,821.1813 A2.5,2.5 0 0 1 525,823.6813 L525,944.0406 A2.5,2.5 0 0 1 522.5,946.5406 L56.5,946.5406 A2.5,2.5 0 0 1 54,944.0406 L54,802.0406 A2.5,2.5 0 0 1 56.5,799.5406 " fill="#E5E7E9" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="54" x2="88" y1="821.1813" y2="821.1813"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="21" x="58" y="814.2145">spi</text></g><!--MD5=[0dee1c75f9ece47f254a0a355731a0bb]
+class ReaderCommunicationException--><g id="elem_ReaderCommunicationException"><rect codeLine="152" fill="#FEFECE" height="88.5625" id="ReaderCommunicationException" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="459" x="22.5" y="1214.5406"/><ellipse cx="139.75" cy="1235.1813" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M142.5156,1231.0563 Q142.6719,1230.8375 142.8594,1230.7281 Q143.0469,1230.6188 143.2656,1230.6188 Q143.6406,1230.6188 143.875,1230.8844 Q144.1094,1231.1344 144.1094,1231.7438 L144.1094,1233.1969 Q144.1094,1233.8063 143.875,1234.0719 Q143.6406,1234.3375 143.2656,1234.3375 Q142.9219,1234.3375 142.7188,1234.1344 Q142.5156,1233.9469 142.4063,1233.4313 Q142.3594,1233.0719 142.1719,1232.8844 Q141.8438,1232.5094 141.2344,1232.2906 Q140.625,1232.0719 140,1232.0719 Q139.2344,1232.0719 138.5938,1232.4 Q137.9688,1232.7281 137.4688,1233.4781 Q136.9844,1234.2281 136.9844,1235.2594 L136.9844,1236.3531 Q136.9844,1237.5875 137.875,1238.4156 Q138.7656,1239.2281 140.3594,1239.2281 Q141.2969,1239.2281 141.9531,1238.9781 Q142.3438,1238.8219 142.7656,1238.3844 Q143.0313,1238.1188 143.1719,1238.0406 Q143.3281,1237.9625 143.5313,1237.9625 Q143.8594,1237.9625 144.1094,1238.2281 Q144.375,1238.4781 144.375,1238.8219 Q144.375,1239.1656 144.0313,1239.5719 Q143.5313,1240.15 142.7344,1240.4781 Q141.6563,1240.9313 140.3594,1240.9313 Q138.8438,1240.9313 137.6406,1240.3063 Q136.6563,1239.8063 135.9688,1238.7438 Q135.2813,1237.6656 135.2813,1236.3844 L135.2813,1235.2281 Q135.2813,1233.9 135.8906,1232.7594 Q136.5156,1231.6031 137.6094,1230.9938 Q138.7031,1230.3688 139.9375,1230.3688 Q140.6719,1230.3688 141.3125,1230.5406 Q141.9688,1230.6969 142.5156,1231.0563 Z " fill="#000000"/><ellipse cx="165.25" cy="1234.6813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="201.25" y="1232.2145">&lt;&lt;RuntimeException&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="171.25" y="1247.8551">ReaderCommunicationException</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="23.5" x2="480.5" y1="1255.8219" y2="1255.8219"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="23.5" x2="480.5" y1="1263.8219" y2="1263.8219"/><ellipse cx="33.5" cy="1277.1422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="317" x="42.5" y="1280.4957">ReaderCommunicationException (String message)</text><ellipse cx="33.5" cy="1292.7828" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="433" x="42.5" y="1296.1363">ReaderCommunicationException (String message, Throwable cause)</text></g><!--MD5=[3f64bfe3b1698c1197202681f77be61a]
+class ReaderProtocolNotSupportedException--><g id="elem_ReaderProtocolNotSupportedException"><rect codeLine="156" fill="#FEFECE" height="72.9219" id="ReaderProtocolNotSupportedException" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="408" x="35" y="1043.5406"/><ellipse cx="105.75" cy="1064.1813" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M108.5156,1060.0563 Q108.6719,1059.8375 108.8594,1059.7281 Q109.0469,1059.6188 109.2656,1059.6188 Q109.6406,1059.6188 109.875,1059.8844 Q110.1094,1060.1344 110.1094,1060.7438 L110.1094,1062.1969 Q110.1094,1062.8063 109.875,1063.0719 Q109.6406,1063.3375 109.2656,1063.3375 Q108.9219,1063.3375 108.7188,1063.1344 Q108.5156,1062.9469 108.4063,1062.4313 Q108.3594,1062.0719 108.1719,1061.8844 Q107.8438,1061.5094 107.2344,1061.2906 Q106.625,1061.0719 106,1061.0719 Q105.2344,1061.0719 104.5938,1061.4 Q103.9688,1061.7281 103.4688,1062.4781 Q102.9844,1063.2281 102.9844,1064.2594 L102.9844,1065.3531 Q102.9844,1066.5875 103.875,1067.4156 Q104.7656,1068.2281 106.3594,1068.2281 Q107.2969,1068.2281 107.9531,1067.9781 Q108.3438,1067.8219 108.7656,1067.3844 Q109.0313,1067.1188 109.1719,1067.0406 Q109.3281,1066.9625 109.5313,1066.9625 Q109.8594,1066.9625 110.1094,1067.2281 Q110.375,1067.4781 110.375,1067.8219 Q110.375,1068.1656 110.0313,1068.5719 Q109.5313,1069.15 108.7344,1069.4781 Q107.6563,1069.9313 106.3594,1069.9313 Q104.8438,1069.9313 103.6406,1069.3063 Q102.6563,1068.8063 101.9688,1067.7438 Q101.2813,1066.6656 101.2813,1065.3844 L101.2813,1064.2281 Q101.2813,1062.9 101.8906,1061.7594 Q102.5156,1060.6031 103.6094,1059.9938 Q104.7031,1059.3688 105.9375,1059.3688 Q106.6719,1059.3688 107.3125,1059.5406 Q107.9688,1059.6969 108.5156,1060.0563 Z " fill="#000000"/><ellipse cx="131.25" cy="1063.6813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="188.25" y="1061.2145">&lt;&lt;RuntimeException&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="247" x="137.25" y="1076.8551">ReaderProtocolNotSupportedException</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="36" x2="442" y1="1084.8219" y2="1084.8219"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="36" x2="442" y1="1092.8219" y2="1092.8219"/><ellipse cx="46" cy="1106.1422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="382" x="55" y="1109.4957">ReaderProtocolNotSupportedException (String cardProtocol)</text></g><!--MD5=[32fc7b65f340d78e9416d68a58b55b2e]
+class CardCommunicationException--><g id="elem_CardCommunicationException"><rect codeLine="159" fill="#FEFECE" height="88.5625" id="CardCommunicationException" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="443" x="516.5" y="1214.5406"/><ellipse cx="633.75" cy="1235.1813" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M636.5156,1231.0563 Q636.6719,1230.8375 636.8594,1230.7281 Q637.0469,1230.6188 637.2656,1230.6188 Q637.6406,1230.6188 637.875,1230.8844 Q638.1094,1231.1344 638.1094,1231.7438 L638.1094,1233.1969 Q638.1094,1233.8063 637.875,1234.0719 Q637.6406,1234.3375 637.2656,1234.3375 Q636.9219,1234.3375 636.7188,1234.1344 Q636.5156,1233.9469 636.4063,1233.4313 Q636.3594,1233.0719 636.1719,1232.8844 Q635.8438,1232.5094 635.2344,1232.2906 Q634.625,1232.0719 634,1232.0719 Q633.2344,1232.0719 632.5938,1232.4 Q631.9688,1232.7281 631.4688,1233.4781 Q630.9844,1234.2281 630.9844,1235.2594 L630.9844,1236.3531 Q630.9844,1237.5875 631.875,1238.4156 Q632.7656,1239.2281 634.3594,1239.2281 Q635.2969,1239.2281 635.9531,1238.9781 Q636.3438,1238.8219 636.7656,1238.3844 Q637.0313,1238.1188 637.1719,1238.0406 Q637.3281,1237.9625 637.5313,1237.9625 Q637.8594,1237.9625 638.1094,1238.2281 Q638.375,1238.4781 638.375,1238.8219 Q638.375,1239.1656 638.0313,1239.5719 Q637.5313,1240.15 636.7344,1240.4781 Q635.6563,1240.9313 634.3594,1240.9313 Q632.8438,1240.9313 631.6406,1240.3063 Q630.6563,1239.8063 629.9688,1238.7438 Q629.2813,1237.6656 629.2813,1236.3844 L629.2813,1235.2281 Q629.2813,1233.9 629.8906,1232.7594 Q630.5156,1231.6031 631.6094,1230.9938 Q632.7031,1230.3688 633.9375,1230.3688 Q634.6719,1230.3688 635.3125,1230.5406 Q635.9688,1230.6969 636.5156,1231.0563 Z " fill="#000000"/><ellipse cx="659.25" cy="1234.6813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="687.25" y="1232.2145">&lt;&lt;RuntimeException&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="665.25" y="1247.8551">CardCommunicationException</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="517.5" x2="958.5" y1="1255.8219" y2="1255.8219"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="517.5" x2="958.5" y1="1263.8219" y2="1263.8219"/><ellipse cx="527.5" cy="1277.1422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="301" x="536.5" y="1280.4957">CardCommunicationException (String message)</text><ellipse cx="527.5" cy="1292.7828" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="417" x="536.5" y="1296.1363">CardCommunicationException (String message, Throwable cause)</text></g><!--MD5=[120218adfd8782b0057db0a1b8294250]
+class ApiProperties--><g id="elem_ApiProperties"><rect codeLine="56" fill="#FEFECE" height="63.6406" id="ApiProperties" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="209" x="1501.5" y="307.5406"/><ellipse cx="1516.5" cy="323.5406" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1519.2656,319.4156 Q1519.4219,319.1969 1519.6094,319.0875 Q1519.7969,318.9781 1520.0156,318.9781 Q1520.3906,318.9781 1520.625,319.2438 Q1520.8594,319.4938 1520.8594,320.1031 L1520.8594,321.5563 Q1520.8594,322.1656 1520.625,322.4313 Q1520.3906,322.6969 1520.0156,322.6969 Q1519.6719,322.6969 1519.4688,322.4938 Q1519.2656,322.3063 1519.1563,321.7906 Q1519.1094,321.4313 1518.9219,321.2438 Q1518.5938,320.8688 1517.9844,320.65 Q1517.375,320.4313 1516.75,320.4313 Q1515.9844,320.4313 1515.3438,320.7594 Q1514.7188,321.0875 1514.2188,321.8375 Q1513.7344,322.5875 1513.7344,323.6188 L1513.7344,324.7125 Q1513.7344,325.9469 1514.625,326.775 Q1515.5156,327.5875 1517.1094,327.5875 Q1518.0469,327.5875 1518.7031,327.3375 Q1519.0938,327.1813 1519.5156,326.7438 Q1519.7813,326.4781 1519.9219,326.4 Q1520.0781,326.3219 1520.2813,326.3219 Q1520.6094,326.3219 1520.8594,326.5875 Q1521.125,326.8375 1521.125,327.1813 Q1521.125,327.525 1520.7813,327.9313 Q1520.2813,328.5094 1519.4844,328.8375 Q1518.4063,329.2906 1517.1094,329.2906 Q1515.5938,329.2906 1514.3906,328.6656 Q1513.4063,328.1656 1512.7188,327.1031 Q1512.0313,326.025 1512.0313,324.7438 L1512.0313,323.5875 Q1512.0313,322.2594 1512.6406,321.1188 Q1513.2656,319.9625 1514.3594,319.3531 Q1515.4531,318.7281 1516.6875,318.7281 Q1517.4219,318.7281 1518.0625,318.9 Q1518.7188,319.0563 1519.2656,319.4156 Z " fill="#000000"/><ellipse cx="1535.5" cy="323.0406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="30" x="1541.5" y="328.3941">final</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="1575.5" y="328.3941">ReaderApiProperties</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1502.5" x2="1709.5" y1="339.5406" y2="339.5406"/><ellipse cx="1512.5" cy="352.8609" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="30" x="1521.5" y="356.2145">final</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="101" x="1555.5" y="356.2145">String VERSION</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1502.5" x2="1709.5" y1="363.1813" y2="363.1813"/></g><!--MD5=[9b9eb2a75cf02134ca888acb9ec1b2e1]
+class CardReader--><g id="elem_CardReader"><rect codeLine="59" fill="#FEFECE" height="94.9219" id="CardReader" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="185" x="1803.5" y="292.0406"/><ellipse cx="1847.3" cy="308.0406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1848.2531,304.6813 L1848.2531,311.3375 L1849.9719,311.3375 Q1850.5813,311.3375 1850.8469,311.5719 Q1851.1125,311.8063 1851.1125,312.1969 Q1851.1125,312.5719 1850.8469,312.8063 Q1850.5813,313.0406 1849.9719,313.0406 L1844.8313,313.0406 Q1844.2219,313.0406 1843.9563,312.8063 Q1843.6906,312.5719 1843.6906,312.1813 Q1843.6906,311.8063 1843.9563,311.5719 Q1844.2219,311.3375 1844.8313,311.3375 L1846.55,311.3375 L1846.55,304.6813 L1844.8313,304.6813 Q1844.2219,304.6813 1843.9563,304.4469 Q1843.6906,304.2125 1843.6906,303.8219 Q1843.6906,303.4469 1843.9563,303.2125 Q1844.2219,302.9781 1844.8313,302.9781 L1849.9719,302.9781 Q1850.5813,302.9781 1850.8469,303.2125 Q1851.1125,303.4469 1851.1125,303.8219 Q1851.1125,304.2125 1850.8469,304.4469 Q1850.5813,304.6813 1849.9719,304.6813 L1848.2531,304.6813 Z " fill="#000000"/><ellipse cx="1872.7" cy="307.5406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="78" x="1878.7" y="312.8941">CardReader</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1804.5" x2="1987.5" y1="324.0406" y2="324.0406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1804.5" x2="1987.5" y1="332.0406" y2="332.0406"/><ellipse cx="1814.5" cy="345.3609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="1823.5" y="348.7145">String getName ()</text><ellipse cx="1814.5" cy="361.0016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="1823.5" y="364.3551">boolean isContactless ()</text><ellipse cx="1814.5" cy="376.6422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="1823.5" y="379.9957">boolean isCardPresent ()</text></g><!--MD5=[804ce276a6dc3f86faefc07689b73fdf]
+class ConfigurableCardReader--><g id="elem_ConfigurableCardReader"><rect codeLine="64" fill="#FEFECE" height="79.2813" id="ConfigurableCardReader" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="435" x="2349.5" y="596.0406"/><ellipse cx="2477.75" cy="612.0406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2478.7031,608.6813 L2478.7031,615.3375 L2480.4219,615.3375 Q2481.0313,615.3375 2481.2969,615.5719 Q2481.5625,615.8063 2481.5625,616.1969 Q2481.5625,616.5719 2481.2969,616.8063 Q2481.0313,617.0406 2480.4219,617.0406 L2475.2813,617.0406 Q2474.6719,617.0406 2474.4063,616.8063 Q2474.1406,616.5719 2474.1406,616.1813 Q2474.1406,615.8063 2474.4063,615.5719 Q2474.6719,615.3375 2475.2813,615.3375 L2477,615.3375 L2477,608.6813 L2475.2813,608.6813 Q2474.6719,608.6813 2474.4063,608.4469 Q2474.1406,608.2125 2474.1406,607.8219 Q2474.1406,607.4469 2474.4063,607.2125 Q2474.6719,606.9781 2475.2813,606.9781 L2480.4219,606.9781 Q2481.0313,606.9781 2481.2969,607.2125 Q2481.5625,607.4469 2481.5625,607.8219 Q2481.5625,608.2125 2481.2969,608.4469 Q2481.0313,608.6813 2480.4219,608.6813 L2478.7031,608.6813 Z " fill="#000000"/><ellipse cx="2503.25" cy="611.5406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="159" x="2509.25" y="616.8941">ConfigurableCardReader</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="2350.5" x2="2783.5" y1="628.0406" y2="628.0406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="2350.5" x2="2783.5" y1="636.0406" y2="636.0406"/><ellipse cx="2360.5" cy="649.3609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="409" x="2369.5" y="652.7145">void activateProtocol (String readerProtocol, String cardProtocol)</text><ellipse cx="2360.5" cy="665.0016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="296" x="2369.5" y="668.3551">void deactivateProtocol (String readerProtocol)</text></g><!--MD5=[d49bae05a0ef9926e55d34fb069365d5]
+class ObservableCardReader--><g id="elem_ObservableCardReader"><rect codeLine="68" fill="#FEFECE" height="204.4063" id="ObservableCardReader" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="721" x="1593.5" y="533.5406"/><ellipse cx="1869.25" cy="549.5406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1870.2031,546.1813 L1870.2031,552.8375 L1871.9219,552.8375 Q1872.5313,552.8375 1872.7969,553.0719 Q1873.0625,553.3063 1873.0625,553.6969 Q1873.0625,554.0719 1872.7969,554.3063 Q1872.5313,554.5406 1871.9219,554.5406 L1866.7813,554.5406 Q1866.1719,554.5406 1865.9063,554.3063 Q1865.6406,554.0719 1865.6406,553.6813 Q1865.6406,553.3063 1865.9063,553.0719 Q1866.1719,552.8375 1866.7813,552.8375 L1868.5,552.8375 L1868.5,546.1813 L1866.7813,546.1813 Q1866.1719,546.1813 1865.9063,545.9469 Q1865.6406,545.7125 1865.6406,545.3219 Q1865.6406,544.9469 1865.9063,544.7125 Q1866.1719,544.4781 1866.7813,544.4781 L1871.9219,544.4781 Q1872.5313,544.4781 1872.7969,544.7125 Q1873.0625,544.9469 1873.0625,545.3219 Q1873.0625,545.7125 1872.7969,545.9469 Q1872.5313,546.1813 1871.9219,546.1813 L1870.2031,546.1813 Z " fill="#000000"/><ellipse cx="1894.75" cy="549.0406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="150" x="1900.75" y="554.3941">ObservableCardReader</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1594.5" x2="2313.5" y1="565.5406" y2="565.5406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1594.5" x2="2313.5" y1="573.5406" y2="573.5406"/><ellipse cx="1604.5" cy="586.8609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="695" x="1613.5" y="590.2145">void setReaderObservationExceptionHandler (CardReaderObservationExceptionHandlerSpi exceptionHandler)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1613.5" y="605.8551"> </text><ellipse cx="1604.5" cy="618.1422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="344" x="1613.5" y="621.4957">void addObserver (CardReaderObserverSpi observer)</text><ellipse cx="1604.5" cy="633.7828" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="367" x="1613.5" y="637.1363">void removeObserver (CardReaderObserverSpi observer)</text><ellipse cx="1604.5" cy="649.4234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="1613.5" y="652.777">void clearObservers ()</text><ellipse cx="1604.5" cy="665.0641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="1613.5" y="668.4176">int countObservers ()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1613.5" y="684.0582"> </text><ellipse cx="1604.5" cy="696.3453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="355" x="1613.5" y="699.6988">void startCardDetection (DetectionMode detectionMode)</text><ellipse cx="1604.5" cy="711.9859" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="1613.5" y="715.3395">void stopCardDetection ()</text><ellipse cx="1604.5" cy="727.6266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="1613.5" y="730.9801">void finalizeCardProcessing ()</text></g><!--MD5=[f9e56a49e679096f1681e872e7fe17dc]
+class DetectionMode--><g id="elem_DetectionMode"><rect codeLine="80" fill="#FEFECE" height="79.2813" id="DetectionMode" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="138" x="1385" y="596.0406"/><ellipse cx="1400" cy="612.0406" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1398.8594,612.8375 L1398.8594,615.3375 L1403.1875,615.3375 L1403.1875,614.4156 Q1403.1875,613.8063 1403.4219,613.5406 Q1403.6719,613.275 1404.0469,613.275 Q1404.4219,613.275 1404.6563,613.5406 Q1404.8906,613.8063 1404.8906,614.4156 L1404.8906,617.0406 L1396.8906,617.0406 Q1396.2656,617.0406 1396,616.8063 Q1395.75,616.5719 1395.75,616.1813 Q1395.75,615.8063 1396.0156,615.5719 Q1396.2813,615.3375 1396.8906,615.3375 L1397.1563,615.3375 L1397.1563,608.6813 L1396.8906,608.6813 Q1396.2656,608.6813 1396,608.4469 Q1395.75,608.2125 1395.75,607.8219 Q1395.75,607.4469 1396,607.2125 Q1396.2656,606.9781 1396.8906,606.9781 L1404.5156,606.9781 L1404.5156,609.5719 Q1404.5156,610.1813 1404.2813,610.4469 Q1404.0625,610.6969 1403.6719,610.6969 Q1403.2969,610.6969 1403.0625,610.4469 Q1402.8281,610.1813 1402.8281,609.5719 L1402.8281,608.6813 L1398.8594,608.6813 L1398.8594,611.1344 L1400.3438,611.1344 Q1400.3438,610.4781 1400.4688,610.2906 Q1400.7344,609.8844 1401.2031,609.8844 Q1401.5781,609.8844 1401.8125,610.15 Q1402.0469,610.4 1402.0469,611.0094 L1402.0469,612.9781 Q1402.0469,613.525 1401.9219,613.7125 Q1401.6563,614.1031 1401.2031,614.1031 Q1400.7344,614.1031 1400.4688,613.6969 Q1400.3438,613.5094 1400.3438,612.8375 L1398.8594,612.8375 Z " fill="#000000"/><ellipse cx="1419" cy="611.5406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="1425" y="616.8941">DetectionMode</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1386" x2="1522" y1="628.0406" y2="628.0406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="1391" y="644.7145">REPEATING</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="1391" y="660.3551">SINGLESHOT</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1386" x2="1522" y1="667.3219" y2="667.3219"/></g><!--MD5=[b4b6a5721e02f7cea6ba89274ea67351]
+class NotificationMode--><g id="elem_NotificationMode"><rect codeLine="84" fill="#FEFECE" height="79.2813" id="NotificationMode" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="147" x="1385.5" y="851.5406"/><ellipse cx="1400.5" cy="867.5406" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1399.3594,868.3375 L1399.3594,870.8375 L1403.6875,870.8375 L1403.6875,869.9156 Q1403.6875,869.3063 1403.9219,869.0406 Q1404.1719,868.775 1404.5469,868.775 Q1404.9219,868.775 1405.1563,869.0406 Q1405.3906,869.3063 1405.3906,869.9156 L1405.3906,872.5406 L1397.3906,872.5406 Q1396.7656,872.5406 1396.5,872.3063 Q1396.25,872.0719 1396.25,871.6813 Q1396.25,871.3063 1396.5156,871.0719 Q1396.7813,870.8375 1397.3906,870.8375 L1397.6563,870.8375 L1397.6563,864.1813 L1397.3906,864.1813 Q1396.7656,864.1813 1396.5,863.9469 Q1396.25,863.7125 1396.25,863.3219 Q1396.25,862.9469 1396.5,862.7125 Q1396.7656,862.4781 1397.3906,862.4781 L1405.0156,862.4781 L1405.0156,865.0719 Q1405.0156,865.6813 1404.7813,865.9469 Q1404.5625,866.1969 1404.1719,866.1969 Q1403.7969,866.1969 1403.5625,865.9469 Q1403.3281,865.6813 1403.3281,865.0719 L1403.3281,864.1813 L1399.3594,864.1813 L1399.3594,866.6344 L1400.8438,866.6344 Q1400.8438,865.9781 1400.9688,865.7906 Q1401.2344,865.3844 1401.7031,865.3844 Q1402.0781,865.3844 1402.3125,865.65 Q1402.5469,865.9 1402.5469,866.5094 L1402.5469,868.4781 Q1402.5469,869.025 1402.4219,869.2125 Q1402.1563,869.6031 1401.7031,869.6031 Q1401.2344,869.6031 1400.9688,869.1969 Q1400.8438,869.0094 1400.8438,868.3375 L1399.3594,868.3375 Z " fill="#000000"/><ellipse cx="1419.5" cy="867.0406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="1425.5" y="872.3941">NotificationMode</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1386.5" x2="1531.5" y1="883.5406" y2="883.5406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="1391.5" y="900.2145">ALWAYS</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="1391.5" y="915.8551">MATCHED_ONLY</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1386.5" x2="1531.5" y1="922.8219" y2="922.8219"/></g><!--MD5=[0929af63d3085909faf7f6bf84f6ab77]
+class CardReaderEvent--><g id="elem_CardReaderEvent"><rect codeLine="88" fill="#FEFECE" height="94.9219" id="CardReaderEvent" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="518" x="1416" y="1032.5406"/><ellipse cx="1608.75" cy="1048.5406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1609.7031,1045.1813 L1609.7031,1051.8375 L1611.4219,1051.8375 Q1612.0313,1051.8375 1612.2969,1052.0719 Q1612.5625,1052.3063 1612.5625,1052.6969 Q1612.5625,1053.0719 1612.2969,1053.3063 Q1612.0313,1053.5406 1611.4219,1053.5406 L1606.2813,1053.5406 Q1605.6719,1053.5406 1605.4063,1053.3063 Q1605.1406,1053.0719 1605.1406,1052.6813 Q1605.1406,1052.3063 1605.4063,1052.0719 Q1605.6719,1051.8375 1606.2813,1051.8375 L1608,1051.8375 L1608,1045.1813 L1606.2813,1045.1813 Q1605.6719,1045.1813 1605.4063,1044.9469 Q1605.1406,1044.7125 1605.1406,1044.3219 Q1605.1406,1043.9469 1605.4063,1043.7125 Q1605.6719,1043.4781 1606.2813,1043.4781 L1611.4219,1043.4781 Q1612.0313,1043.4781 1612.2969,1043.7125 Q1612.5625,1043.9469 1612.5625,1044.3219 Q1612.5625,1044.7125 1612.2969,1044.9469 Q1612.0313,1045.1813 1611.4219,1045.1813 L1609.7031,1045.1813 Z " fill="#000000"/><ellipse cx="1634.25" cy="1048.0406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="113" x="1640.25" y="1053.3941">CardReaderEvent</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1417" x2="1933" y1="1064.5406" y2="1064.5406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1417" x2="1933" y1="1072.5406" y2="1072.5406"/><ellipse cx="1427" cy="1085.8609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="1436" y="1089.2145">String getReaderName ()</text><ellipse cx="1427" cy="1101.5016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="1436" y="1104.8551">Type getType ()</text><ellipse cx="1427" cy="1117.1422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="492" x="1436" y="1120.4957">ScheduledCardSelectionsResponse getScheduledCardSelectionsResponse ()</text></g><!--MD5=[8c5299a29afee59ed68e59a232a2321d]
+class CardReaderEventType--><g id="elem_CardReaderEventType"><rect codeLine="93" fill="#FEFECE" height="110.5625" id="CardReaderEventType" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="128" x="1610" y="1203.5406"/><ellipse cx="1648.85" cy="1219.5406" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1647.7094,1220.3375 L1647.7094,1222.8375 L1652.0375,1222.8375 L1652.0375,1221.9156 Q1652.0375,1221.3063 1652.2719,1221.0406 Q1652.5219,1220.775 1652.8969,1220.775 Q1653.2719,1220.775 1653.5063,1221.0406 Q1653.7406,1221.3063 1653.7406,1221.9156 L1653.7406,1224.5406 L1645.7406,1224.5406 Q1645.1156,1224.5406 1644.85,1224.3063 Q1644.6,1224.0719 1644.6,1223.6813 Q1644.6,1223.3063 1644.8656,1223.0719 Q1645.1313,1222.8375 1645.7406,1222.8375 L1646.0063,1222.8375 L1646.0063,1216.1813 L1645.7406,1216.1813 Q1645.1156,1216.1813 1644.85,1215.9469 Q1644.6,1215.7125 1644.6,1215.3219 Q1644.6,1214.9469 1644.85,1214.7125 Q1645.1156,1214.4781 1645.7406,1214.4781 L1653.3656,1214.4781 L1653.3656,1217.0719 Q1653.3656,1217.6813 1653.1313,1217.9469 Q1652.9125,1218.1969 1652.5219,1218.1969 Q1652.1469,1218.1969 1651.9125,1217.9469 Q1651.6781,1217.6813 1651.6781,1217.0719 L1651.6781,1216.1813 L1647.7094,1216.1813 L1647.7094,1218.6344 L1649.1938,1218.6344 Q1649.1938,1217.9781 1649.3188,1217.7906 Q1649.5844,1217.3844 1650.0531,1217.3844 Q1650.4281,1217.3844 1650.6625,1217.65 Q1650.8969,1217.9 1650.8969,1218.5094 L1650.8969,1220.4781 Q1650.8969,1221.025 1650.7719,1221.2125 Q1650.5063,1221.6031 1650.0531,1221.6031 Q1649.5844,1221.6031 1649.3188,1221.1969 Q1649.1938,1221.0094 1649.1938,1220.3375 L1647.7094,1220.3375 Z " fill="#000000"/><ellipse cx="1673.15" cy="1219.0406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="1679.15" y="1224.3941">Type</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1611" x2="1737" y1="1235.5406" y2="1235.5406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="1616" y="1252.2145">CARD_INSERTED</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="1616" y="1267.8551">CARD_MATCHED</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="1616" y="1283.4957">CARD_REMOVED</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="1616" y="1299.1363">UNAVAILABLE</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1611" x2="1737" y1="1306.1031" y2="1306.1031"/></g><!--MD5=[c890fc32568b07397f767fd1f5f57b26]
+class CardReaderObserverSpi--><g id="elem_CardReaderObserverSpi"><rect codeLine="101" fill="#FEFECE" height="63.6406" id="CardReaderObserverSpi" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="398" x="1568" y="859.0406"/><ellipse cx="1679.25" cy="875.0406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1680.2031,871.6813 L1680.2031,878.3375 L1681.9219,878.3375 Q1682.5313,878.3375 1682.7969,878.5719 Q1683.0625,878.8063 1683.0625,879.1969 Q1683.0625,879.5719 1682.7969,879.8063 Q1682.5313,880.0406 1681.9219,880.0406 L1676.7813,880.0406 Q1676.1719,880.0406 1675.9063,879.8063 Q1675.6406,879.5719 1675.6406,879.1813 Q1675.6406,878.8063 1675.9063,878.5719 Q1676.1719,878.3375 1676.7813,878.3375 L1678.5,878.3375 L1678.5,871.6813 L1676.7813,871.6813 Q1676.1719,871.6813 1675.9063,871.4469 Q1675.6406,871.2125 1675.6406,870.8219 Q1675.6406,870.4469 1675.9063,870.2125 Q1676.1719,869.9781 1676.7813,869.9781 L1681.9219,869.9781 Q1682.5313,869.9781 1682.7969,870.2125 Q1683.0625,870.4469 1683.0625,870.8219 Q1683.0625,871.2125 1682.7969,871.4469 Q1682.5313,871.6813 1681.9219,871.6813 L1680.2031,871.6813 Z " fill="#000000"/><ellipse cx="1704.75" cy="874.5406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="156" x="1710.75" y="879.8941">CardReaderObserverSpi</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1569" x2="1965" y1="891.0406" y2="891.0406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="1569" x2="1965" y1="899.0406" y2="899.0406"/><ellipse cx="1579" cy="912.3609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="372" x="1588" y="915.7145">void onReaderEvent (CardReaderEvent cardReaderEvent)</text></g><!--MD5=[006db6bb96001c5e4b016d87418574ed]
+class CardReaderObservationExceptionHandlerSpi--><g id="elem_CardReaderObservationExceptionHandlerSpi"><rect codeLine="104" fill="#FEFECE" height="63.6406" id="CardReaderObservationExceptionHandlerSpi" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="564" x="2001" y="859.0406"/><ellipse cx="2130.75" cy="875.0406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2131.7031,871.6813 L2131.7031,878.3375 L2133.4219,878.3375 Q2134.0313,878.3375 2134.2969,878.5719 Q2134.5625,878.8063 2134.5625,879.1969 Q2134.5625,879.5719 2134.2969,879.8063 Q2134.0313,880.0406 2133.4219,880.0406 L2128.2813,880.0406 Q2127.6719,880.0406 2127.4063,879.8063 Q2127.1406,879.5719 2127.1406,879.1813 Q2127.1406,878.8063 2127.4063,878.5719 Q2127.6719,878.3375 2128.2813,878.3375 L2130,878.3375 L2130,871.6813 L2128.2813,871.6813 Q2127.6719,871.6813 2127.4063,871.4469 Q2127.1406,871.2125 2127.1406,870.8219 Q2127.1406,870.4469 2127.4063,870.2125 Q2127.6719,869.9781 2128.2813,869.9781 L2133.4219,869.9781 Q2134.0313,869.9781 2134.2969,870.2125 Q2134.5625,870.4469 2134.5625,870.8219 Q2134.5625,871.2125 2134.2969,871.4469 Q2134.0313,871.6813 2133.4219,871.6813 L2131.7031,871.6813 Z " fill="#000000"/><ellipse cx="2156.25" cy="874.5406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="285" x="2162.25" y="879.8941">CardReaderObservationExceptionHandlerSpi</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="2002" x2="2564" y1="891.0406" y2="891.0406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="2002" x2="2564" y1="899.0406" y2="899.0406"/><ellipse cx="2012" cy="912.3609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="538" x="2021" y="915.7145">void onReaderObservationError (String contextInfo, String readerName, Throwable e)</text></g><!--MD5=[7fedbe548ff6d9bf7b67b5fa43b6dc23]
+class CardSelectionManager--><g id="elem_CardSelectionManager"><rect codeLine="113" fill="#FEFECE" height="235.6875" id="CardSelectionManager" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="994" x="250" y="221.5406"/><ellipse cx="664.25" cy="237.5406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M665.2031,234.1813 L665.2031,240.8375 L666.9219,240.8375 Q667.5313,240.8375 667.7969,241.0719 Q668.0625,241.3063 668.0625,241.6969 Q668.0625,242.0719 667.7969,242.3063 Q667.5313,242.5406 666.9219,242.5406 L661.7813,242.5406 Q661.1719,242.5406 660.9063,242.3063 Q660.6406,242.0719 660.6406,241.6813 Q660.6406,241.3063 660.9063,241.0719 Q661.1719,240.8375 661.7813,240.8375 L663.5,240.8375 L663.5,234.1813 L661.7813,234.1813 Q661.1719,234.1813 660.9063,233.9469 Q660.6406,233.7125 660.6406,233.3219 Q660.6406,232.9469 660.9063,232.7125 Q661.1719,232.4781 661.7813,232.4781 L666.9219,232.4781 Q667.5313,232.4781 667.7969,232.7125 Q668.0625,232.9469 668.0625,233.3219 Q668.0625,233.7125 667.7969,233.9469 Q667.5313,234.1813 666.9219,234.1813 L665.2031,234.1813 Z " fill="#000000"/><ellipse cx="689.75" cy="237.0406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="146" x="695.75" y="242.3941">CardSelectionManager</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="251" x2="1243" y1="253.5406" y2="253.5406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="251" x2="1243" y1="261.5406" y2="261.5406"/><ellipse cx="261" cy="274.8609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="270" y="278.2145">void setMultipleSelectionMode ()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="270" y="293.8551"> </text><ellipse cx="261" cy="306.1422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="320" x="270" y="309.4957">int prepareSelection (CardSelection cardSelection)</text><ellipse cx="261" cy="321.7828" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="270" y="325.1363">void prepareReleaseChannel ()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="270" y="340.777"> </text><ellipse cx="261" cy="353.0641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="239" x="270" y="356.4176">String exportCardSelectionScenario ()</text><ellipse cx="261" cy="368.7047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="400" x="270" y="372.0582">int importCardSelectionScenario (String cardSelectionScenario)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="270" y="387.6988"> </text><ellipse cx="261" cy="399.9859" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="499" x="270" y="403.3395">CardSelectionResult processCardSelectionScenario (CardReader cardReader)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="270" y="418.9801"> </text><ellipse cx="261" cy="431.2672" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="968" x="270" y="434.6207">void scheduleCardSelectionScenario (ObservableCardReader observableCardReader, DetectionMode detectionMode, NotificationMode notificationMode)</text><ellipse cx="261" cy="446.9078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="866" x="270" y="450.2613">CardSelectionResult parseScheduledCardSelectionsResponse (ScheduledCardSelectionsResponse scheduledCardSelectionsResponse)</text></g><!--MD5=[b048fcdbdb6b9f6911c1d2807b5ba439]
+class CardSelectionResult--><g id="elem_CardSelectionResult"><rect codeLine="137" fill="#FEFECE" height="94.9219" id="CardSelectionResult" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="302" x="46" y="588.0406"/><ellipse cx="122.75" cy="604.0406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M123.7031,600.6813 L123.7031,607.3375 L125.4219,607.3375 Q126.0313,607.3375 126.2969,607.5719 Q126.5625,607.8063 126.5625,608.1969 Q126.5625,608.5719 126.2969,608.8063 Q126.0313,609.0406 125.4219,609.0406 L120.2813,609.0406 Q119.6719,609.0406 119.4063,608.8063 Q119.1406,608.5719 119.1406,608.1813 Q119.1406,607.8063 119.4063,607.5719 Q119.6719,607.3375 120.2813,607.3375 L122,607.3375 L122,600.6813 L120.2813,600.6813 Q119.6719,600.6813 119.4063,600.4469 Q119.1406,600.2125 119.1406,599.8219 Q119.1406,599.4469 119.4063,599.2125 Q119.6719,598.9781 120.2813,598.9781 L125.4219,598.9781 Q126.0313,598.9781 126.2969,599.2125 Q126.5625,599.4469 126.5625,599.8219 Q126.5625,600.2125 126.2969,600.4469 Q126.0313,600.6813 125.4219,600.6813 L123.7031,600.6813 Z " fill="#000000"/><ellipse cx="148.25" cy="603.5406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="129" x="154.25" y="608.8941">CardSelectionResult</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="47" x2="347" y1="620.0406" y2="620.0406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="47" x2="347" y1="628.0406" y2="628.0406"/><ellipse cx="57" cy="641.3609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="66" y="644.7145">Map&lt;Integer, SmartCard&gt; getSmartCards ()</text><ellipse cx="57" cy="657.0016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="66" y="660.3551">SmartCard getActiveSmartCard ()</text><ellipse cx="57" cy="672.6422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="66" y="675.9957">int getActiveSelectionIndex ()</text></g><!--MD5=[0fbebdc936aa14b829c88e48b951a711]
+class ScheduledCardSelectionsResponse--><g id="elem_ScheduledCardSelectionsResponse"><rect codeLine="142" fill="#FEFECE" height="48" id="ScheduledCardSelectionsResponse" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="270" x="974" y="611.5406"/><ellipse cx="989" cy="627.5406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M989.9531,624.1813 L989.9531,630.8375 L991.6719,630.8375 Q992.2813,630.8375 992.5469,631.0719 Q992.8125,631.3063 992.8125,631.6969 Q992.8125,632.0719 992.5469,632.3063 Q992.2813,632.5406 991.6719,632.5406 L986.5313,632.5406 Q985.9219,632.5406 985.6563,632.3063 Q985.3906,632.0719 985.3906,631.6813 Q985.3906,631.3063 985.6563,631.0719 Q985.9219,630.8375 986.5313,630.8375 L988.25,630.8375 L988.25,624.1813 L986.5313,624.1813 Q985.9219,624.1813 985.6563,623.9469 Q985.3906,623.7125 985.3906,623.3219 Q985.3906,622.9469 985.6563,622.7125 Q985.9219,622.4781 986.5313,622.4781 L991.6719,622.4781 Q992.2813,622.4781 992.5469,622.7125 Q992.8125,622.9469 992.8125,623.3219 Q992.8125,623.7125 992.5469,623.9469 Q992.2813,624.1813 991.6719,624.1813 L989.9531,624.1813 Z " fill="#000000"/><ellipse cx="1008" cy="627.0406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="227" x="1014" y="632.3941">ScheduledCardSelectionsResponse</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="975" x2="1243" y1="643.5406" y2="643.5406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="975" x2="1243" y1="651.5406" y2="651.5406"/></g><!--MD5=[01b70d0a2359744fc21c39698f2f9070]
+class InvalidCardResponseException--><g id="elem_InvalidCardResponseException"><rect codeLine="145" fill="#FEFECE" height="88.5625" id="InvalidCardResponseException" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="450" x="489" y="591.0406"/><ellipse cx="606.25" cy="611.6813" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M609.0156,607.5563 Q609.1719,607.3375 609.3594,607.2281 Q609.5469,607.1188 609.7656,607.1188 Q610.1406,607.1188 610.375,607.3844 Q610.6094,607.6344 610.6094,608.2438 L610.6094,609.6969 Q610.6094,610.3063 610.375,610.5719 Q610.1406,610.8375 609.7656,610.8375 Q609.4219,610.8375 609.2188,610.6344 Q609.0156,610.4469 608.9063,609.9313 Q608.8594,609.5719 608.6719,609.3844 Q608.3438,609.0094 607.7344,608.7906 Q607.125,608.5719 606.5,608.5719 Q605.7344,608.5719 605.0938,608.9 Q604.4688,609.2281 603.9688,609.9781 Q603.4844,610.7281 603.4844,611.7594 L603.4844,612.8531 Q603.4844,614.0875 604.375,614.9156 Q605.2656,615.7281 606.8594,615.7281 Q607.7969,615.7281 608.4531,615.4781 Q608.8438,615.3219 609.2656,614.8844 Q609.5313,614.6188 609.6719,614.5406 Q609.8281,614.4625 610.0313,614.4625 Q610.3594,614.4625 610.6094,614.7281 Q610.875,614.9781 610.875,615.3219 Q610.875,615.6656 610.5313,616.0719 Q610.0313,616.65 609.2344,616.9781 Q608.1563,617.4313 606.8594,617.4313 Q605.3438,617.4313 604.1406,616.8063 Q603.1563,616.3063 602.4688,615.2438 Q601.7813,614.1656 601.7813,612.8844 L601.7813,611.7281 Q601.7813,610.4 602.3906,609.2594 Q603.0156,608.1031 604.1094,607.4938 Q605.2031,606.8688 606.4375,606.8688 Q607.1719,606.8688 607.8125,607.0406 Q608.4688,607.1969 609.0156,607.5563 Z " fill="#000000"/><ellipse cx="631.75" cy="611.1813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="663.25" y="608.7145">&lt;&lt;RuntimeException&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="637.75" y="624.3551">InvalidCardResponseException</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="490" x2="938" y1="632.3219" y2="632.3219"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="490" x2="938" y1="640.3219" y2="640.3219"/><ellipse cx="500" cy="653.6422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="308" x="509" y="656.9957">InvalidCardResponseException (String message)</text><ellipse cx="500" cy="669.2828" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="424" x="509" y="672.6363">InvalidCardResponseException (String message, Throwable cause)</text></g><!--MD5=[47f0011813555fb489a606ff84d44b55]
+class CardSelection--><g id="elem_CardSelection"><rect codeLine="130" fill="#FEFECE" height="48" id="CardSelection" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="132" x="377" y="867.0406"/><ellipse cx="392" cy="883.0406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M392.9531,879.6813 L392.9531,886.3375 L394.6719,886.3375 Q395.2813,886.3375 395.5469,886.5719 Q395.8125,886.8063 395.8125,887.1969 Q395.8125,887.5719 395.5469,887.8063 Q395.2813,888.0406 394.6719,888.0406 L389.5313,888.0406 Q388.9219,888.0406 388.6563,887.8063 Q388.3906,887.5719 388.3906,887.1813 Q388.3906,886.8063 388.6563,886.5719 Q388.9219,886.3375 389.5313,886.3375 L391.25,886.3375 L391.25,879.6813 L389.5313,879.6813 Q388.9219,879.6813 388.6563,879.4469 Q388.3906,879.2125 388.3906,878.8219 Q388.3906,878.4469 388.6563,878.2125 Q388.9219,877.9781 389.5313,877.9781 L394.6719,877.9781 Q395.2813,877.9781 395.5469,878.2125 Q395.8125,878.4469 395.8125,878.8219 Q395.8125,879.2125 395.5469,879.4469 Q395.2813,879.6813 394.6719,879.6813 L392.9531,879.6813 Z " fill="#000000"/><ellipse cx="411" cy="882.5406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="89" x="417" y="887.8941">CardSelection</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="378" x2="508" y1="899.0406" y2="899.0406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="378" x2="508" y1="907.0406" y2="907.0406"/></g><!--MD5=[4d4351d1dd1d596b03b4778d9849998b]
+class SmartCard--><g id="elem_SmartCard"><rect codeLine="132" fill="#FEFECE" height="79.2813" id="SmartCard" rx="2.5" ry="2.5" style="stroke:#D4AC0D;stroke-width:2.0;" width="271" x="70.5" y="851.5406"/><ellipse cx="162.25" cy="867.5406" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M163.2031,864.1813 L163.2031,870.8375 L164.9219,870.8375 Q165.5313,870.8375 165.7969,871.0719 Q166.0625,871.3063 166.0625,871.6969 Q166.0625,872.0719 165.7969,872.3063 Q165.5313,872.5406 164.9219,872.5406 L159.7813,872.5406 Q159.1719,872.5406 158.9063,872.3063 Q158.6406,872.0719 158.6406,871.6813 Q158.6406,871.3063 158.9063,871.0719 Q159.1719,870.8375 159.7813,870.8375 L161.5,870.8375 L161.5,864.1813 L159.7813,864.1813 Q159.1719,864.1813 158.9063,863.9469 Q158.6406,863.7125 158.6406,863.3219 Q158.6406,862.9469 158.9063,862.7125 Q159.1719,862.4781 159.7813,862.4781 L164.9219,862.4781 Q165.5313,862.4781 165.7969,862.7125 Q166.0625,862.9469 166.0625,863.3219 Q166.0625,863.7125 165.7969,863.9469 Q165.5313,864.1813 164.9219,864.1813 L163.2031,864.1813 Z " fill="#000000"/><ellipse cx="187.75" cy="867.0406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="68" x="193.75" y="872.3941">SmartCard</text><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="71.5" x2="340.5" y1="883.5406" y2="883.5406"/><line style="stroke:#D4AC0D;stroke-width:2.0;" x1="71.5" x2="340.5" y1="891.5406" y2="891.5406"/><ellipse cx="81.5" cy="904.8609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="90.5" y="908.2145">String getPowerOnData ()</text><ellipse cx="81.5" cy="920.5016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="90.5" y="923.8551">byte[] getSelectApplicationResponse ()</text></g><!--MD5=[a8c5704f10936d956c5ecd531800e156]
+reverse link CardReader to ConfigurableCardReader--><g id="link_CardReader_ConfigurableCardReader"><path d="M2007.08,389.2106 C2139.44,447.2056 2357.88,542.9126 2479.09,596.0206 " fill="none" id="CardReader-backto-ConfigurableCardReader" style="stroke:#181818;stroke-width:2.0;"/><polygon fill="none" points="2004.1,395.5496,1988.6,381.1116,2009.72,382.7266,2004.1,395.5496" style="stroke:#181818;stroke-width:2.0;"/></g><!--MD5=[40362253147766c9c743cec65354f353]
+reverse link CardReader to ObservableCardReader--><g id="link_CardReader_ObservableCardReader"><path d="M1909.11,406.9886 C1916.47,444.2816 1925.8,491.5816 1934.04,533.3846 " fill="none" id="CardReader-backto-ObservableCardReader" style="stroke:#181818;stroke-width:2.0;"/><polygon fill="none" points="1902.19,408.1026,1905.19,387.1256,1915.93,405.3926,1902.19,408.1026" style="stroke:#181818;stroke-width:2.0;"/></g><!--MD5=[102e1d884686006ef209cb8bf85fc641]
+reverse link ObservableCardReader to NotificationMode--><g id="link_ObservableCardReader_NotificationMode"><path codeLine="168" d="M1634.43,744.2736 C1605.67,758.5276 1577.74,774.2686 1552,791.5406 C1527.78,807.7916 1505.21,831.4096 1488.36,851.4446 " fill="none" id="ObservableCardReader-backto-NotificationMode" style="stroke:#181818;stroke-width:2.0;"/><ellipse cx="1640.9417" cy="741.1032" fill="#FFFFFF" rx="8" ry="8" style="stroke:#181818;stroke-width:2.0;"/><line style="stroke:#181818;stroke-width:2.0;" x1="1633.7433" x2="1648.14" y1="744.5937" y2="737.6126"/><line style="stroke:#181818;stroke-width:2.0;" x1="1637.4511" x2="1644.4322" y1="733.9049" y2="748.3015"/></g><!--MD5=[66154b3cafeacecd1e2cf8a5b4606cfa]
+link DetectionMode to ObservableCardReader--><g id="link_DetectionMode_ObservableCardReader"><path codeLine="169" d="M1523.19,638.0296 C1531.05,638.2396 1538.95,638.4186 1546.5,638.5406 C1556.94,638.7096 1559.56,638.5816 1570,638.5406 C1572.79,638.5296 1575.58,638.5186 1578.39,638.5066 " fill="none" id="DetectionMode-to-ObservableCardReader" style="stroke:#181818;stroke-width:2.0;"/><ellipse cx="1585.4901" cy="638.4701" fill="#FFFFFF" rx="8" ry="8" style="stroke:#181818;stroke-width:2.0;"/><line style="stroke:#181818;stroke-width:2.0;" x1="1577.4901" x2="1593.49" y1="638.5006" y2="638.4396"/><line style="stroke:#181818;stroke-width:2.0;" x1="1585.4596" x2="1585.5205" y1="630.4702" y2="646.47"/></g><!--MD5=[dbbe3a95d6beb8e83c2ba54b40633429]
+reverse link DetectionMode to ObservableCardReader--><g id="link_DetectionMode_ObservableCardReader"><path codeLine="170" d="M1528.61,635.5406 C1547.83,635.5406 1569.84,635.5406 1593.5,635.5406 " fill="none" id="DetectionMode-backto-ObservableCardReader" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="1523.26,635.5406,1532.26,639.5406,1528.26,635.5406,1532.26,631.5406,1523.26,635.5406" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="1540.25,624.8023,1549.2951,627.7413,1549.2951,621.8634,1540.25,624.8023" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="1554.25" y="629.3092">use</text></g><!--MD5=[f1012a22e38ec6ba8ebae710b6ed7740]
+link ObservableCardReader to CardReaderObservationExceptionHandlerSpi--><g id="link_ObservableCardReader_CardReaderObservationExceptionHandlerSpi"><path codeLine="171" d="M2085.45,737.8236 C2139.67,779.6046 2198.9,825.2366 2238.22,855.5326 " fill="none" id="ObservableCardReader-to-CardReaderObservationExceptionHandlerSpi" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="2242.43,858.7826,2237.7488,850.1174,2238.4717,855.7279,2232.8612,856.4507,2242.43,858.7826" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="2146.9607,778.8541,2141.5895,771.0054,2138.002,775.6615,2146.9607,778.8541" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="2152" y="780.3092">use</text></g><!--MD5=[340f8b1fa6e5f55e3decc3d0782fe370]
+reverse link CardReaderEvent to CardReaderEventType--><g id="link_CardReaderEvent_CardReaderEventType"><path codeLine="173" d="M1660.97,1142.6626 C1660.18,1147.6766 1659.5,1152.6816 1659,1157.5406 C1657.46,1172.4556 1658.59,1188.5466 1660.8,1203.3866 " fill="none" id="CardReaderEvent-backto-CardReaderEventType" style="stroke:#181818;stroke-width:2.0;"/><ellipse cx="1662.2312" cy="1135.6056" fill="#FFFFFF" rx="8" ry="8" style="stroke:#181818;stroke-width:2.0;"/><line style="stroke:#181818;stroke-width:2.0;" x1="1660.8224" x2="1663.64" y1="1143.4806" y2="1127.7306"/><line style="stroke:#181818;stroke-width:2.0;" x1="1654.3562" x2="1670.1062" y1="1134.1968" y2="1137.0144"/></g><!--MD5=[ea5d4584d91c2420faebe0edaa35dd07]
+link CardReaderEvent to CardReaderEventType--><g id="link_CardReaderEvent_CardReaderEventType"><path codeLine="174" d="M1674.74,1127.5456 C1674.62,1149.1616 1674.47,1175.1286 1674.34,1198.1876 " fill="none" id="CardReaderEvent-to-CardReaderEventType" style="stroke:#3498DB;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#3498DB" points="1674.31,1203.3656,1678.3614,1194.3886,1674.3386,1198.3657,1670.3615,1194.3429,1674.31,1203.3656" style="stroke:#3498DB;stroke-width:2.0;"/><polygon fill="#000000" points="1678.9717,1170.8023,1681.9618,1161.774,1676.084,1161.7407,1678.9717,1170.8023" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="1688" y="1170.3092">provide</text></g><!--MD5=[288fe8b4bb69e8cb3939b387d62d61fe]
+reverse link ScheduledCardSelectionsResponse to CardReaderEvent--><g id="link_ScheduledCardSelectionsResponse_CardReaderEvent"><path codeLine="175" d="M1117.66,664.7116 C1139.31,730.2766 1202.12,893.9226 1313,978.5406 C1343.46,1001.7886 1379.01,1019.6586 1415.7,1033.3956 " fill="none" id="ScheduledCardSelectionsResponse-backto-CardReaderEvent" style="stroke:#3498DB;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#3498DB" points="1116.06,659.7906,1115.059,669.5885,1117.6158,664.5424,1122.6618,667.0992,1116.06,659.7906" style="stroke:#3498DB;stroke-width:2.0;"/><polygon fill="#000000" points="1314.8567,887.414,1318.2575,896.2957,1322.8285,892.6005,1314.8567,887.414" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="1327" y="895.8092">provide</text></g><!--MD5=[ec53f9149eb0a5572ddbd98e132e34ec]
+link CardSelectionResult to SmartCard--><g id="link_CardSelectionResult_SmartCard"><path codeLine="177" d="M198.661,683.3316 C200.314,729.8926 202.831,800.7826 204.446,846.2586 " fill="none" id="CardSelectionResult-to-SmartCard" style="stroke:#3498DB;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#3498DB" points="204.628,851.4006,208.3066,842.2646,204.4509,846.4038,200.3117,842.548,204.628,851.4006" style="stroke:#3498DB;stroke-width:2.0;"/><polygon fill="#000000" points="208.1774,780.7992,210.7935,771.6555,204.9194,771.8641,208.1774,780.7992" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="217" y="780.3092">provide</text></g><!--MD5=[4e76f4d88bc0a2d674e5b83abfcdfa28]
+link CardSelectionManager to CardSelection--><g id="link_CardSelectionManager_CardSelection"><path codeLine="179" d="M499.103,457.7716 C473.568,479.4686 451.123,504.6096 435,533.5406 C374.764,641.6316 413.468,798.2626 433.331,861.7396 " fill="none" id="CardSelectionManager-to-CardSelection" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="434.959,866.8686,436.0484,857.0802,433.4462,862.103,428.4234,859.5007,434.959,866.8686" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="439.1965,640.7374,443.5508,632.2821,437.7493,631.3375,439.1965,640.7374" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="449" y="640.3092">use</text></g><!--MD5=[eca09f4198ea9093719c3216b0b2e695]
+link CardSelectionManager to ScheduledCardSelectionsResponse--><g id="link_CardSelectionManager_ScheduledCardSelectionsResponse"><path codeLine="180" d="M891.112,457.5816 C959.302,512.9626 1034.79,574.2666 1076.6,608.2246 " fill="none" id="CardSelectionManager-to-ScheduledCardSelectionsResponse" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="1080.54,611.4236,1076.0821,602.6414,1076.6611,608.2686,1071.034,608.8476,1080.54,611.4236" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="947.8812,498.9545,942.7128,490.9709,939.0072,495.5336,947.8812,498.9545" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="953" y="500.3092">use</text></g><!--MD5=[49f67eafe7b04eace454d2c0c91af031]
+link CardSelectionManager to CardSelectionResult--><g id="link_CardSelectionManager_CardSelectionResult"><path codeLine="181" d="M407.318,457.5766 C388.924,466.9936 371.023,476.9806 354,487.5406 C311.465,513.9256 270.427,552.9856 240.981,584.2106 " fill="none" id="CardSelectionManager-to-CardSelectionResult" style="stroke:#3498DB;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#3498DB" points="237.449,587.9786,246.5231,584.1496,240.8691,584.3313,240.6874,578.6774,237.449,587.9786" style="stroke:#3498DB;stroke-width:2.0;"/><polygon fill="#000000" points="355.0217,498.8311,363.9987,495.6904,360.4383,491.0137,355.0217,498.8311" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="368" y="500.3092">provide</text></g><!--MD5=[8b80a861e2ead4cbc046e22ed79fe254]
+link CardSelectionManager to CardReader--><g id="link_CardSelectionManager_CardReader"><path codeLine="182" d="M975.011,221.4006 C1179.74,132.3606 1484.63,42.6406 1728,151.5406 C1789.74,179.1706 1838.15,241.9306 1866.83,287.3606 " fill="none" id="CardSelectionManager-to-CardReader" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="1869.55,291.6906,1868.1868,281.9366,1866.9064,287.4466,1861.3964,286.1663,1869.55,291.6906" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="1515.9864,104.1711,1507.1827,100.5731,1506.7492,106.4349,1515.9864,104.1711" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="1520" y="108.3092">use</text></g><!--MD5=[4bfc324fd34bdcdca92028c8c160427f]
+link CardSelectionManager to NotificationMode--><g id="link_CardSelectionManager_NotificationMode"><path codeLine="183" d="M1162.42,457.6176 C1198.58,478.8906 1232.27,503.9746 1261,533.5406 C1327.8,602.2846 1283.84,654.0906 1331,737.5406 C1331.88,739.1016 1385.43,802.7526 1422.98,847.3186 " fill="none" id="CardSelectionManager-to-NotificationMode" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="1426.34,851.2996,1423.5888,841.8428,1423.1138,847.4797,1417.4769,847.0047,1426.34,851.2996" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="1338.7791,639.9589,1336.1948,630.8061,1331.3085,634.0732,1338.7791,639.9589" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="1345" y="640.3092">use</text></g><!--MD5=[8e99f00a1ff5326dab1fccc039630f0e]
+link CardSelectionManager to DetectionMode--><g id="link_CardSelectionManager_DetectionMode"><path codeLine="184" d="M1244.36,446.5946 C1271.66,458.7956 1298.09,472.3916 1323,487.5406 C1365.91,513.6336 1402.71,558.1866 1426.28,591.4216 " fill="none" id="CardSelectionManager-to-DetectionMode" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="1429.38,595.8266,1427.4754,586.1637,1426.5041,591.7365,1420.9312,590.7652,1429.38,595.8266" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="1353.9118,498.9165,1348.6658,490.9836,1345.0048,495.5822,1353.9118,498.9165" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="1359" y="500.3092">use</text></g><!--MD5=[ecafc35f2e69f11a41899fd2d6bff697]
+link CardSelectionManager to InvalidCardResponseException--><g id="link_CardSelectionManager_InvalidCardResponseException"><path codeLine="185" d="M733.863,457.5816 C728.843,502.3006 723.39,550.8836 719.47,585.8096 " fill="none" id="CardSelectionManager-to-InvalidCardResponseException" style="stroke:#3498DB;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#3498DB" points="718.903,590.8616,723.8831,582.3647,719.4614,585.8929,715.9332,581.4712,718.903,590.8616" style="stroke:#3498DB;stroke-width:2.0;"/><polygon fill="#000000" points="735.4423,500.7711,739.3718,492.1103,733.5306,491.4547,735.4423,500.7711" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="745" y="500.3092">throw</text></g><!--MD5=[769bf36c235d3c29e1ab536906ddc491]
+link ObservableCardReader to CardReaderObserverSpi--><g id="link_ObservableCardReader_CardReaderObserverSpi"><path codeLine="187" d="M1879.29,737.8236 C1848.84,779.0976 1815.62,824.1286 1793.27,854.4226 " fill="none" id="ObservableCardReader-to-CardReaderObserverSpi" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="1790.06,858.7826,1798.6263,853.9227,1793.032,854.7618,1792.1929,849.1675,1790.06,858.7826" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="1856.0317,779.8259,1863.7664,774.292,1859.0365,770.8025,1856.0317,779.8259" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="1868" y="780.3092">use</text></g><!--MD5=[80beeb8e7435df23c483fb097999290c]
+link CardReaderObserverSpi to CardReaderEvent--><g id="link_CardReaderObserverSpi_CardReaderEvent"><path codeLine="189" d="M1751.6,923.3406 C1737.66,951.6826 1716.85,993.9806 1700.44,1027.3396 " fill="none" id="CardReaderObserverSpi-to-CardReaderEvent" style="stroke:#27AE60;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#27AE60" points="1698.05,1032.1936,1705.6045,1025.8747,1700.2518,1027.7045,1698.422,1022.3518,1698.05,1032.1936" style="stroke:#27AE60;stroke-width:2.0;"/><polygon fill="#000000" points="1720.793,999.2889,1727.4227,992.4699,1722.1484,989.8754,1720.793,999.2889" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="1732" y="999.3092">use</text></g><!--MD5=[1eb259ccd641d78a15a582c900274490]
+link SmartCard to ReaderProtocolNotSupportedException--><!--MD5=[21fcee3fe490d347e3ecc9417572c91b]
+link ReaderProtocolNotSupportedException to ReaderCommunicationException--><!--MD5=[a1e51d2b42def1ea2068c5bed5dda84c]
+link ReaderCommunicationException to CardCommunicationException--><!--MD5=[8a6fd538e8e2566e2a70c275f7ca4f82]
+@startuml
+title
+    Calypsonet - calypsonet-terminal-reader-java-api - 1.1.+ (05/10/2022)
+end title
+
+' == THEME ==
+
+'Couleurs issues de : https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-design-plat/
+!define C_GREY1 F8F9F9
+!define C_GREY2 F2F3F4
+!define C_GREY3 E5E7E9
+!define C_GREY4 D7DBDD
+!define C_GREY5 CACFD2
+!define C_GREY6 BDC3C7
+!define C_LINK 3498DB
+!define C_USE 27AE60
+
+' - - Styles that don't work with new version of plantuml - -
+skinparam stereotypeABorderColor #A9DCDF
+skinparam stereotypeIBorderColor #B4A7E5
+skinparam stereotypeCBorderColor #ADD1B2
+skinparam stereotypeEBorderColor #EB93DF
+' - - END - -
+
+skinparam ClassBorderThickness 2
+skinparam ArrowThickness 2
+
+' Yellow
+skinparam ClassBackgroundColor #FEFECE
+skinparam ClassBorderColor #D4AC0D
+' Red
+skinparam ClassBackgroundColor<<red>> #FDEDEC
+skinparam ClassBorderColor<<red>> #E74C3C
+hide <<red>> stereotype
+' Purple
+skinparam ClassBackgroundColor<<purple>> #F4ECF7
+skinparam ClassBorderColor<<purple>> #8E44AD
+hide <<purple>> stereotype
+' blue
+skinparam ClassBackgroundColor<<blue>> #EBF5FB
+skinparam ClassBorderColor<<blue>> #3498DB
+hide <<blue>> stereotype
+' Green
+skinparam ClassBackgroundColor<<green>> #E9F7EF
+skinparam ClassBorderColor<<green>> #27AE60
+hide <<green>> stereotype
+' Grey
+skinparam ClassBackgroundColor<<grey>> #EAECEE
+skinparam ClassBorderColor<<grey>> #2C3E50
+hide <<grey>> stereotype
+
+' == CONTENT ==
+
+package "org.calypsonet.terminal.reader" as readerApi {
+    ' SERVICE
+    together {
+        +class "**final** ReaderApiProperties" as ApiProperties {
+            +{static} **final** String VERSION
+        }
+        +interface CardReader {
+            +String getName ()
+            +boolean isContactless ()
+            +boolean isCardPresent ()
+        }
+        +interface ConfigurableCardReader extends CardReader {
+            +void activateProtocol (String readerProtocol, String cardProtocol)
+            +void deactivateProtocol (String readerProtocol)
+        }
+        +interface ObservableCardReader extends CardReader {
+            +void setReaderObservationExceptionHandler (CardReaderObservationExceptionHandlerSpi exceptionHandler)
+
+            +void addObserver (CardReaderObserverSpi observer)
+            +void removeObserver (CardReaderObserverSpi observer)
+            +void clearObservers ()
+            +int countObservers ()
+
+            +void startCardDetection (DetectionMode detectionMode)
+            +void stopCardDetection ()
+            +void finalizeCardProcessing ()
+        }
+        +enum DetectionMode {
+            REPEATING
+            SINGLESHOT
+        }
+        +enum NotificationMode {
+            ALWAYS
+            MATCHED_ONLY
+        }
+        +interface CardReaderEvent {
+            +String getReaderName ()
+            +Type getType ()
+            +ScheduledCardSelectionsResponse getScheduledCardSelectionsResponse ()
+        }
+        +enum "Type" as CardReaderEventType {
+            CARD_INSERTED
+            CARD_MATCHED
+            CARD_REMOVED
+            UNAVAILABLE
+        }
+        ' SPI
+        package "spi" as readerSpi {
+            +interface CardReaderObserverSpi {
+                +void onReaderEvent (CardReaderEvent cardReaderEvent)
+            }
+            +interface CardReaderObservationExceptionHandlerSpi {
+                +void onReaderObservationError (String contextInfo, String readerName, Throwable e)
+            }
+        }
+    }
+
+    ' SELECTION
+    package "selection" as selectionApi {
+        ' Selection
+        +interface CardSelectionManager {
+            +void setMultipleSelectionMode ()
+
+            +int prepareSelection (CardSelection cardSelection)
+            +void prepareReleaseChannel ()
+
+            +String exportCardSelectionScenario ()
+            +int importCardSelectionScenario (String cardSelectionScenario)
+
+            +CardSelectionResult processCardSelectionScenario (CardReader cardReader)
+
+            +void scheduleCardSelectionScenario (ObservableCardReader observableCardReader, DetectionMode detectionMode, NotificationMode notificationMode)
+            +CardSelectionResult parseScheduledCardSelectionsResponse (ScheduledCardSelectionsResponse scheduledCardSelectionsResponse)
+        }
+
+        ' Card Extension SPI
+        package "spi" as selectionSpi {
+            +interface CardSelection {
+            }
+            +interface "SmartCard" as SmartCard {
+                +String getPowerOnData ()
+                +byte[] getSelectApplicationResponse ()
+            }
+        }
+        +interface CardSelectionResult {
+            +Map<Integer, SmartCard> getSmartCards ()
+            +SmartCard getActiveSmartCard ()
+            +int getActiveSelectionIndex ()
+        }
+        +interface ScheduledCardSelectionsResponse {
+        }
+
+        +class "<<RuntimeException>>\nInvalidCardResponseException" as InvalidCardResponseException {
+            +InvalidCardResponseException (String message)
+            +InvalidCardResponseException (String message, Throwable cause)
+        }
+    }
+    ' EXCEPTIONS
+    'together {
+        +class "<<RuntimeException>>\nReaderCommunicationException" as ReaderCommunicationException {
+            +ReaderCommunicationException (String message)
+            +ReaderCommunicationException (String message, Throwable cause)
+        }
+        +class "<<RuntimeException>>\nReaderProtocolNotSupportedException" as ReaderProtocolNotSupportedException {
+            +ReaderProtocolNotSupportedException (String cardProtocol)
+        }
+        +class "<<RuntimeException>>\nCardCommunicationException" as CardCommunicationException {
+            +CardCommunicationException (String message)
+            +CardCommunicationException (String message, Throwable cause)
+        }
+    '}
+}
+
+' Associations
+
+ObservableCardReader +- - NotificationMode
+ObservableCardReader +-left- DetectionMode
+ObservableCardReader .left.> DetectionMode #C_USE : use >
+ObservableCardReader ..> CardReaderObservationExceptionHandlerSpi #C_USE : use >
+
+CardReaderEvent +- - CardReaderEventType
+CardReaderEvent ..> CardReaderEventType #C_LINK : provide >
+CardReaderEvent .up.> ScheduledCardSelectionsResponse #C_LINK : provide >
+
+CardSelectionResult ..> SmartCard #C_LINK : provide >
+
+CardSelectionManager ..> CardSelection #C_USE : use >
+CardSelectionManager ..> ScheduledCardSelectionsResponse #C_USE : use >
+CardSelectionManager ..> CardSelectionResult #C_LINK : provide >
+CardSelectionManager .right.> CardReader #C_USE : use >
+CardSelectionManager ..> NotificationMode #C_USE : use >
+CardSelectionManager ..> DetectionMode #C_USE : use >
+CardSelectionManager ..> InvalidCardResponseException #C_LINK : throw >
+
+ObservableCardReader ..> CardReaderObserverSpi #C_USE : use >
+
+CardReaderObserverSpi ..> CardReaderEvent #C_USE : use >
+
+' == LAYOUT ==
+
+SmartCard -[hidden]- ReaderProtocolNotSupportedException
+ReaderProtocolNotSupportedException -[hidden]- ReaderCommunicationException
+ReaderCommunicationException -[hidden]right- CardCommunicationException
+
+' == STYLE ==
+
+package readerApi #C_GREY1 {}
+package readerSpi #C_GREY2 {}
+package selectionApi #C_GREY2 {}
+package selectionSpi #C_GREY3 {}
+
+@enduml
+
+@startuml
+title
+    Calypsonet - calypsonet-terminal-reader-java-api - 1.1.+ (05/10/2022)
+end title
+
+
+
+skinparam stereotypeABorderColor #A9DCDF
+skinparam stereotypeIBorderColor #B4A7E5
+skinparam stereotypeCBorderColor #ADD1B2
+skinparam stereotypeEBorderColor #EB93DF
+
+skinparam ClassBorderThickness 2
+skinparam ArrowThickness 2
+
+skinparam ClassBackgroundColor #FEFECE
+skinparam ClassBorderColor #D4AC0D
+skinparam ClassBackgroundColor<<red>> #FDEDEC
+skinparam ClassBorderColor<<red>> #E74C3C
+hide <<red>> stereotype
+skinparam ClassBackgroundColor<<purple>> #F4ECF7
+skinparam ClassBorderColor<<purple>> #8E44AD
+hide <<purple>> stereotype
+skinparam ClassBackgroundColor<<blue>> #EBF5FB
+skinparam ClassBorderColor<<blue>> #3498DB
+hide <<blue>> stereotype
+skinparam ClassBackgroundColor<<green>> #E9F7EF
+skinparam ClassBorderColor<<green>> #27AE60
+hide <<green>> stereotype
+skinparam ClassBackgroundColor<<grey>> #EAECEE
+skinparam ClassBorderColor<<grey>> #2C3E50
+hide <<grey>> stereotype
+
+
+package "org.calypsonet.terminal.reader" as readerApi {
+    together {
+        +class "**final** ReaderApiProperties" as ApiProperties {
+            +{static} **final** String VERSION
+        }
+        +interface CardReader {
+            +String getName ()
+            +boolean isContactless ()
+            +boolean isCardPresent ()
+        }
+        +interface ConfigurableCardReader extends CardReader {
+            +void activateProtocol (String readerProtocol, String cardProtocol)
+            +void deactivateProtocol (String readerProtocol)
+        }
+        +interface ObservableCardReader extends CardReader {
+            +void setReaderObservationExceptionHandler (CardReaderObservationExceptionHandlerSpi exceptionHandler)
+
+            +void addObserver (CardReaderObserverSpi observer)
+            +void removeObserver (CardReaderObserverSpi observer)
+            +void clearObservers ()
+            +int countObservers ()
+
+            +void startCardDetection (DetectionMode detectionMode)
+            +void stopCardDetection ()
+            +void finalizeCardProcessing ()
+        }
+        +enum DetectionMode {
+            REPEATING
+            SINGLESHOT
+        }
+        +enum NotificationMode {
+            ALWAYS
+            MATCHED_ONLY
+        }
+        +interface CardReaderEvent {
+            +String getReaderName ()
+            +Type getType ()
+            +ScheduledCardSelectionsResponse getScheduledCardSelectionsResponse ()
+        }
+        +enum "Type" as CardReaderEventType {
+            CARD_INSERTED
+            CARD_MATCHED
+            CARD_REMOVED
+            UNAVAILABLE
+        }
+        package "spi" as readerSpi {
+            +interface CardReaderObserverSpi {
+                +void onReaderEvent (CardReaderEvent cardReaderEvent)
+            }
+            +interface CardReaderObservationExceptionHandlerSpi {
+                +void onReaderObservationError (String contextInfo, String readerName, Throwable e)
+            }
+        }
+    }
+
+    package "selection" as selectionApi {
+        +interface CardSelectionManager {
+            +void setMultipleSelectionMode ()
+
+            +int prepareSelection (CardSelection cardSelection)
+            +void prepareReleaseChannel ()
+
+            +String exportCardSelectionScenario ()
+            +int importCardSelectionScenario (String cardSelectionScenario)
+
+            +CardSelectionResult processCardSelectionScenario (CardReader cardReader)
+
+            +void scheduleCardSelectionScenario (ObservableCardReader observableCardReader, DetectionMode detectionMode, NotificationMode notificationMode)
+            +CardSelectionResult parseScheduledCardSelectionsResponse (ScheduledCardSelectionsResponse scheduledCardSelectionsResponse)
+        }
+
+        package "spi" as selectionSpi {
+            +interface CardSelection {
+            }
+            +interface "SmartCard" as SmartCard {
+                +String getPowerOnData ()
+                +byte[] getSelectApplicationResponse ()
+            }
+        }
+        +interface CardSelectionResult {
+            +Map<Integer, SmartCard> getSmartCards ()
+            +SmartCard getActiveSmartCard ()
+            +int getActiveSelectionIndex ()
+        }
+        +interface ScheduledCardSelectionsResponse {
+        }
+
+        +class "<<RuntimeException>>\nInvalidCardResponseException" as InvalidCardResponseException {
+            +InvalidCardResponseException (String message)
+            +InvalidCardResponseException (String message, Throwable cause)
+        }
+    }
+        +class "<<RuntimeException>>\nReaderCommunicationException" as ReaderCommunicationException {
+            +ReaderCommunicationException (String message)
+            +ReaderCommunicationException (String message, Throwable cause)
+        }
+        +class "<<RuntimeException>>\nReaderProtocolNotSupportedException" as ReaderProtocolNotSupportedException {
+            +ReaderProtocolNotSupportedException (String cardProtocol)
+        }
+        +class "<<RuntimeException>>\nCardCommunicationException" as CardCommunicationException {
+            +CardCommunicationException (String message)
+            +CardCommunicationException (String message, Throwable cause)
+        }
+}
+
+
+ObservableCardReader +- - NotificationMode
+ObservableCardReader +-left- DetectionMode
+ObservableCardReader .left.> DetectionMode #27AE60 : use >
+ObservableCardReader ..> CardReaderObservationExceptionHandlerSpi #27AE60 : use >
+
+CardReaderEvent +- - CardReaderEventType
+CardReaderEvent ..> CardReaderEventType #3498DB : provide >
+CardReaderEvent .up.> ScheduledCardSelectionsResponse #3498DB : provide >
+
+CardSelectionResult ..> SmartCard #3498DB : provide >
+
+CardSelectionManager ..> CardSelection #27AE60 : use >
+CardSelectionManager ..> ScheduledCardSelectionsResponse #27AE60 : use >
+CardSelectionManager ..> CardSelectionResult #3498DB : provide >
+CardSelectionManager .right.> CardReader #27AE60 : use >
+CardSelectionManager ..> NotificationMode #27AE60 : use >
+CardSelectionManager ..> DetectionMode #27AE60 : use >
+CardSelectionManager ..> InvalidCardResponseException #3498DB : throw >
+
+ObservableCardReader ..> CardReaderObserverSpi #27AE60 : use >
+
+CardReaderObserverSpi ..> CardReaderEvent #27AE60 : use >
+
+
+SmartCard -[hidden]- ReaderProtocolNotSupportedException
+ReaderProtocolNotSupportedException -[hidden]- ReaderCommunicationException
+ReaderCommunicationException -[hidden]right- CardCommunicationException
+
+
+package readerApi #F8F9F9 {}
+package readerSpi #F2F3F4 {}
+package selectionApi #F2F3F4 {}
+package selectionSpi #E5E7E9 {}
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>
