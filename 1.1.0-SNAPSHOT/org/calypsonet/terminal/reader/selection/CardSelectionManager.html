@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -181,8 +181,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#exportCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader.DetectionMode,org.calypsonet.terminal.reader.ObservableCardReader.NotificationMode)">exportCardSelectionScenario</a></span>&#8203;(<a href="../ObservableCardReader.DetectionMode.html" title="enum in org.calypsonet.terminal.reader">ObservableCardReader.DetectionMode</a>&nbsp;detectionMode,
-                           <a href="../ObservableCardReader.NotificationMode.html" title="enum in org.calypsonet.terminal.reader">ObservableCardReader.NotificationMode</a>&nbsp;notificationMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#exportCardSelectionScenario()">exportCardSelectionScenario</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Exports the current prepared card selection scenario to a string in JSON format.</div>
 </td>
@@ -227,15 +226,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader)">scheduleCardSelectionScenario</a></span>&#8203;(<a href="../ObservableCardReader.html" title="interface in org.calypsonet.terminal.reader">ObservableCardReader</a>&nbsp;observableCardReader)</code></th>
-<td class="colLast">
-<div class="block">Invokes the method <a href="#scheduleCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader,org.calypsonet.terminal.reader.ObservableCardReader.DetectionMode,org.calypsonet.terminal.reader.ObservableCardReader.NotificationMode)"><code>scheduleCardSelectionScenario(ObservableCardReader,
- ObservableCardReader.DetectionMode, ObservableCardReader.NotificationMode)</code></a> using the current
- detection and notification modes.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduleCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader,org.calypsonet.terminal.reader.ObservableCardReader.DetectionMode,org.calypsonet.terminal.reader.ObservableCardReader.NotificationMode)">scheduleCardSelectionScenario</a></span>&#8203;(<a href="../ObservableCardReader.html" title="interface in org.calypsonet.terminal.reader">ObservableCardReader</a>&nbsp;observableCardReader,
                              <a href="../ObservableCardReader.DetectionMode.html" title="enum in org.calypsonet.terminal.reader">ObservableCardReader.DetectionMode</a>&nbsp;detectionMode,
                              <a href="../ObservableCardReader.NotificationMode.html" title="enum in org.calypsonet.terminal.reader">ObservableCardReader.NotificationMode</a>&nbsp;notificationMode)</code></th>
@@ -244,7 +234,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  to the provided <a href="../ObservableCardReader.html" title="interface in org.calypsonet.terminal.reader"><code>ObservableCardReader</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMultipleSelectionMode()">setMultipleSelectionMode</a></span>()</code></th>
 <td class="colLast">
@@ -328,22 +318,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="exportCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader.DetectionMode,org.calypsonet.terminal.reader.ObservableCardReader.NotificationMode)">
+<a id="exportCardSelectionScenario()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>exportCardSelectionScenario</h4>
-<pre class="methodSignature">java.lang.String&nbsp;exportCardSelectionScenario&#8203;(<a href="../ObservableCardReader.DetectionMode.html" title="enum in org.calypsonet.terminal.reader">ObservableCardReader.DetectionMode</a>&nbsp;detectionMode,
-                                             <a href="../ObservableCardReader.NotificationMode.html" title="enum in org.calypsonet.terminal.reader">ObservableCardReader.NotificationMode</a>&nbsp;notificationMode)</pre>
+<pre class="methodSignature">java.lang.String&nbsp;exportCardSelectionScenario()</pre>
 <div class="block">Exports the current prepared card selection scenario to a string in JSON format.
 
  <p>This string can be imported into the same or another card selection manager via the method
  <a href="#importCardSelectionScenario(java.lang.String)"><code>importCardSelectionScenario(String)</code></a>.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>detectionMode</code> - The card detection mode to use when searching for a card.</dd>
-<dd><code>notificationMode</code> - The card notification mode to use when a card is detected.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A not null JSON string.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -362,11 +348,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">int&nbsp;importCardSelectionScenario&#8203;(java.lang.String&nbsp;cardSelectionScenario)</pre>
 <div class="block">Imports a card selection scenario provided as a string in JSON format.
 
- <p>The string must have been exported from a card selection manager via the method <a href="#exportCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader.DetectionMode,org.calypsonet.terminal.reader.ObservableCardReader.NotificationMode)"><code>exportCardSelectionScenario(ObservableCardReader.DetectionMode,
- ObservableCardReader.NotificationMode)</code></a>.
-
- <p>The included card detection and notification modes will be used during the scheduling
- process if they are not overridden.</div>
+ <p>The string must have been exported from a card selection manager via the method <a href="#exportCardSelectionScenario()"><code>exportCardSelectionScenario()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardSelectionScenario</code> - The string in JSON format containing the card selection scenario.</dd>
@@ -377,8 +359,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.1.0</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#exportCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader.DetectionMode,org.calypsonet.terminal.reader.ObservableCardReader.NotificationMode)"><code>exportCardSelectionScenario(ObservableCardReader.DetectionMode,
-     ObservableCardReader.NotificationMode)</code></a></dd>
+<dd><a href="#exportCardSelectionScenario()"><code>exportCardSelectionScenario()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -435,30 +416,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>java.lang.IllegalArgumentException</code> - If one of the parameters is null.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
-</dl>
-</li>
-</ul>
-<a id="scheduleCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>scheduleCardSelectionScenario</h4>
-<pre class="methodSignature">void&nbsp;scheduleCardSelectionScenario&#8203;(<a href="../ObservableCardReader.html" title="interface in org.calypsonet.terminal.reader">ObservableCardReader</a>&nbsp;observableCardReader)</pre>
-<div class="block">Invokes the method <a href="#scheduleCardSelectionScenario(org.calypsonet.terminal.reader.ObservableCardReader,org.calypsonet.terminal.reader.ObservableCardReader.DetectionMode,org.calypsonet.terminal.reader.ObservableCardReader.NotificationMode)"><code>scheduleCardSelectionScenario(ObservableCardReader,
- ObservableCardReader.DetectionMode, ObservableCardReader.NotificationMode)</code></a> using the current
- detection and notification modes.
-
- <p>If the preparation of the card selection scenario was done locally, without being imported,
- then the default values used are <a href="../ObservableCardReader.DetectionMode.html#REPEATING"><code>ObservableCardReader.DetectionMode.REPEATING</code></a> and
- <a href="../ObservableCardReader.NotificationMode.html#ALWAYS"><code>ObservableCardReader.NotificationMode.ALWAYS</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>observableCardReader</code> - The reader with which the card communication is carried out.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - If the observable card reader is null.</dd>
-<dt><span class="simpleTagLabel">Since:</span></dt>
-<dd>1.1.0</dd>
 </dl>
 </li>
 </ul>
