@@ -19,10 +19,10 @@ package org.calypsonet.terminal.reader;
 public class ReaderProtocolNotSupportedException extends RuntimeException {
 
   /**
-   * @param cardProtocol The identification data used to identify the card.
+   * @param physicalProtocolName The identification data used to identify the card.
    * @since 1.0.0
    */
-  public ReaderProtocolNotSupportedException(String cardProtocol) {
-    super("The card protocol " + cardProtocol + " is not supported.");
+  public ReaderProtocolNotSupportedException(String physicalProtocolName) {
+    super("The protocol '" + physicalProtocolName + "' is not supported.");
   }
 }
