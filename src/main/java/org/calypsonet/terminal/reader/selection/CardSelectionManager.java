@@ -179,6 +179,14 @@ public interface CardSelectionManager {
    * #processCardSelectionScenario(CardReader)} or {@link
    * #parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)} method.
    *
+   * <p>Caution: if the local environment does not have the card extensions involved in the
+   * selection scenario, then methods {@link #processCardSelectionScenario(CardReader)} and {@link
+   * #parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)} will not be able to
+   * interpret the content of the result, and consequently, the content of the result object {@link
+   * CardSelectionResult} will not contain any active selection. It will then be necessary to export
+   * the processed scenario in order to import it and interpret it correctly by a card selection
+   * manager that has all the card extensions involved in the selection scenario.
+   *
    * @return A non-null string.
    * @throws IllegalStateException If the card selection scenario has not yet been processed or if
    *     it has failed.
@@ -196,6 +204,8 @@ public interface CardSelectionManager {
    * <ul>
    *   <li>the string must have been exported from a card selection manager via the method {@link
    *       #exportProcessedCardSelectionScenario()},
+   *   <li>the local environment must have the card extensions involved in the card selection
+   *       scenario,
    *   <li>the current manager must first be configured with the same card selection scenario as the
    *       manager that was used to export the processed card selection scenario.
    * </ul>
