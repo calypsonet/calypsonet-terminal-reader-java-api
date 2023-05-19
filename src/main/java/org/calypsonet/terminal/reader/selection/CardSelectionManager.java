@@ -188,8 +188,8 @@ public interface CardSelectionManager {
    * manager that has all the card extensions involved in the selection scenario.
    *
    * @return A non-null string.
-   * @throws IllegalStateException If the card selection scenario has not yet been processed or if
-   *     it has failed.
+   * @throws IllegalStateException If the card selection scenario has not yet been processed or has
+   *     failed.
    * @see #importProcessedCardSelectionScenario(String)
    * @since 1.3.0
    */
