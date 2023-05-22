@@ -91,24 +91,24 @@ public interface CardSelectionManager {
   void prepareReleaseChannel();
 
   /**
-   * Exports the current prepared card selection scenario to a string in JSON format.
+   * Exports the content of the current prepared card selection scenario in string format.
    *
    * <p>This string can be imported into the same or another card selection manager via the method
    * {@link #importCardSelectionScenario(String)}.
    *
-   * @return A not null JSON string.
+   * @return A non-null string.
    * @see #importCardSelectionScenario(String)
    * @since 1.1.0
    */
   String exportCardSelectionScenario();
 
   /**
-   * Imports a card selection scenario provided as a string in JSON format.
+   * Imports a previously exported card selection scenario in string format.
    *
-   * <p>The string must have been exported from a card selection manager via the method {@link
-   * #exportCardSelectionScenario()}.
+   * <p>Prerequisite: the string must have been exported from a card selection manager via the
+   * method {@link #exportCardSelectionScenario()}.
    *
-   * @param cardSelectionScenario The string in JSON format containing the card selection scenario.
+   * @param cardSelectionScenario The string containing the exported card selection scenario.
    * @return The index of the last imported selection in the card selection scenario.
    * @throws IllegalArgumentException If the string is null or malformed.
    * @see #exportCardSelectionScenario()
@@ -168,4 +168,56 @@ public interface CardSelectionManager {
    */
   CardSelectionResult parseScheduledCardSelectionsResponse(
       ScheduledCardSelectionsResponse scheduledCardSelectionsResponse);
+
+  /**
+   * Exports the content of the previously processed card selection scenario in string format.
+   *
+   * <p>This string can be imported into the same or another card selection manager via the method
+   * {@link #importProcessedCardSelectionScenario(String)}.
+   *
+   * <p>Prerequisite: the card selection scenario must first have been processed via the {@link
+   * #processCardSelectionScenario(CardReader)} or {@link
+   * #parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)} method.
+   *
+   * <p>Caution: if the local environment does not have the card extensions involved in the
+   * selection scenario, then methods {@link #processCardSelectionScenario(CardReader)} and {@link
+   * #parseScheduledCardSelectionsResponse(ScheduledCardSelectionsResponse)} will not be able to
+   * interpret the content of the result, and consequently, the content of the result object {@link
+   * CardSelectionResult} will not contain any active selection. It will then be necessary to export
+   * the processed scenario in order to import it and interpret it correctly by a card selection
+   * manager that has all the card extensions involved in the selection scenario.
+   *
+   * @return A non-null string.
+   * @throws IllegalStateException If the card selection scenario has not yet been processed or has
+   *     failed.
+   * @see #importProcessedCardSelectionScenario(String)
+   * @since 1.3.0
+   */
+  String exportProcessedCardSelectionScenario();
+
+  /**
+   * Imports a previously exported processed card selection scenario in string format and returns
+   * the card selection result.
+   *
+   * <p>Prerequisites:
+   *
+   * <ul>
+   *   <li>the string must have been exported from a card selection manager via the method {@link
+   *       #exportProcessedCardSelectionScenario()},
+   *   <li>the local environment must have the card extensions involved in the card selection
+   *       scenario,
+   *   <li>the current manager must first be configured with the same card selection scenario as the
+   *       manager that was used to export the processed card selection scenario.
+   * </ul>
+   *
+   * @param processedCardSelectionScenario The string containing the exported processed card
+   *     selection scenario.
+   * @return A non-null reference.
+   * @throws IllegalArgumentException If the string is null, malformed or contains more card
+   *     selection cases than the current card selection scenario.
+   * @throws InvalidCardResponseException If the data returned by the card could not be interpreted.
+   * @see #exportProcessedCardSelectionScenario()
+   * @since 1.3.0
+   */
+  CardSelectionResult importProcessedCardSelectionScenario(String processedCardSelectionScenario);
 }
